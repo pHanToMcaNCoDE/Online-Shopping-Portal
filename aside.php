@@ -12,8 +12,8 @@
 
 <body>
 
-<!-- Aside Bar -->
-        <aside>
+    <!-- Aside Bar -->
+    <!-- <aside>
             <div class="max-width">
                 <ul class="aside">
                     <li>
@@ -92,14 +92,14 @@
                     </li>
                 </ul>
             </div>
-        </aside>
+        </aside> -->
 
 
 
 
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
