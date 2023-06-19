@@ -1,0 +1,1250 @@
+:root {
+
+    /* Font */
+
+    --av: 'Avenir';
+
+    --blue: skyblue;
+    --g: #66B830;
+    --or: orange;
+    --yellow: yellow;
+    --purple: #e386fc;
+    --pur: #824892;
+    --ash4: #f9fafc;
+    --g2: #caf2af;
+    --cr2: rgb(247, 128, 152);
+    --bl: #000;
+    --ash: #e5e5e5; 
+    --ash2: #efeded;
+    --ash3: #474747;
+    --w: #ffffff;
+    --p: purple;
+    --pk: pink;
+    --cr: crimson;
+    --g: rgb(73, 231, 37);
+    --blu: #92B4EC;
+    --gld: gold;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/********************************************************************
+# Aside Styling 
+*********************************************************************/
+
+aside {
+    background-color: var(--bl);
+    position: fixed;
+    width: 20%;
+    color: var(--w);
+    z-index: 10;
+}
+
+aside.active {
+    left: 0%;
+}
+
+aside .max-width {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .max-width .aside {
+    padding-top: 30%;
+    display: block;
+    justify-content: justify;
+    align-items: center;
+}
+
+aside .max-width .aside li {
+    list-style: none;
+    padding: 10% 50% 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .max-width .aside li a {
+    box-sizing: border-box;
+    font-family: var(--av), sans-serif;
+    font-size: 18px;
+    color: var(--w);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+
+aside .max-width .aside2 {
+    padding-top: 30%;
+    display: block;
+    justify-content: justify;
+    align-items: center;
+}
+
+aside .max-width .aside2 li {
+    list-style: none;
+    padding: 10% 50% 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside .max-width .aside2 li i {
+    font-size: 22px;
+}
+
+aside .max-width .aside2 li a {
+    box-sizing: border-box;
+    font-family: var(--av), sans-serif;
+    font-size: 18px;
+    color: var(--w);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/********************************************************************
+# Navigation Styling 
+*********************************************************************/
+
+nav {
+    position: fixed;
+    height: 62px;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: var(--w);
+    /* z-index: 1; */
+}
+
+nav .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+nav .max-width .left {
+    display: none;
+}
+
+nav .max-width .logo {
+    color: var(--p);
+    font-size: 20px;
+    font-family: var(--av);
+    z-index: 999;
+}
+
+nav .max-width .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .max-width .x {
+    position: absolute;
+    top: 10%;
+    left: -100%;
+    color: var(--bl);
+}
+
+nav .max-width .x.active {
+    left: 28%;
+}
+
+nav .max-width .right li {
+    list-style: none;
+    position: relative;
+}
+
+nav .max-width .right li a {
+    text-decoration: none;
+    display: flex;
+    color: var(--bl);
+    font-size: 18px;
+    font-family: var(--av), sans-serif;
+    margin-left: 50px;
+}
+
+nav .max-width .right li .num {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 14px;
+    color: var(--w);
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    background-color: var(--cr);
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+nav .max-width .right .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+
+nav .max-width .right .user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav .max-width .right .user p {
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+/********************************************************************
+# Main Dashboard Styling 
+*********************************************************************/
+
+.dboard {
+    background-color: var(--ash4);
+    position: absolute;
+}
+
+.dboard .max-width {
+    width: 90%;
+    max-width: 500px;
+}
+.dboard .max-width .header {
+    background-color: var(--ash2);
+    border-radius: 5px;
+    height: 5vh;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: .2%;
+    left: 4%;
+    padding: 2%;
+}
+
+.dboard .max-width .header h2 {
+    font-family: var(--av);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.dboard .max-width .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+}
+
+.dboard .max-width .row .box {
+    content: '';
+    background-color: var(--w);
+    width: 25vw;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 7%;
+    margin-left: 10%;
+    border-left: 4px solid var(--pk);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 2px rgba(234, 234, 234, 0.955);
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dboard .max-width .row .box .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.dboard .max-width .row .box .top .right {
+    display: block;
+}
+
+.dboard .max-width .row .box .top .right p {
+    font-size: 18px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.dboard .max-width .row .box .top .right h4 {
+    font-size: 22px;
+    font-family: var(--av), sans-serif;
+    font-weight: 500;
+
+}
+
+.dboard .max-width .row .box .bottom .box-link {
+    border-top: 1px solid var(--bl);
+    padding: 1%;
+}
+
+.dboard .max-width .row .box .bottom .box-link a {
+    font-size: 17px;
+    color: var(--bl);
+    font-weight: 300;
+    font-family: var(--av), sans-serif;
+    cursor: pointer;
+}
+
+.dboard .max-width .row .box .bottom .box-link i {
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+.dboard .max-width .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+}
+
+.dboard .max-width .row2 .box {
+    content: '';
+    background-color: var(--w);
+    width: 25vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15%;
+    margin-left: 10%;
+    border-left: 4px solid var(--pk);
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px 2px rgba(234, 234, 234, 0.955);
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+.dboard .max-width .row2 .box .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.dboard .max-width .row2 .box .top .right {
+    display: block;
+}
+
+.dboard .max-width .row2 .box .top .right p {
+    font-size: 18px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.dboard .max-width .row2 .box .top .right h4 {
+    font-size: 22px;
+    font-family: var(--av), sans-serif;
+    font-weight: 500;
+
+}
+
+.dboard .max-width .row2 .box .bottom .box-link {
+    border-top: 1px solid var(--bl);
+    padding: 1%;
+}
+
+.dboard .max-width .row2 .box .bottom .box-link a {
+    font-size: 17px;
+    color: var(--bl);
+    font-weight: 300;
+    font-family: var(--av), sans-serif;
+    cursor: pointer;
+}
+
+.dboard .max-width .row2 .box .bottom .box-link i {
+    padding-left: 4%;
+    cursor: pointer;
+}
+
+
+.dboard .max-width .table {
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    background-color: var(--w);
+    width: 70vw;
+    height: 43vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border-left: 4px solid var(--pk);
+    box-shadow: 2px 2px 3px 2px rgba(234, 234, 234, 0.955);
+}
+
+.dboard .max-width .table .header2 {
+    padding: 2% 1%;
+}
+
+.dboard .max-width .table .header2 h2 {
+    font-family: var(--av);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dboard .max-width .table .header2 p {
+    font-size: 15px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    color: var(--ash3);
+}
+
+.dboard .max-width .table table {
+    text-align: left;
+    width: 90%;
+    font-family: var(--av), sans-serif;
+}
+
+.dboard .max-width .table table th {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bl);
+}
+
+.dboard .max-width .table table,
+th,
+td {
+    margin: 3% 4% 10% 4%;
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+.dboard .max-width .table table tr {
+    font-size: 15px;
+    color: var(--ash3);
+    border-bottom: 1px solid var(--ash);
+}
+
+.dboard .max-width .table table tr td .yes {
+    color: var(--g);
+}
+
+.dboard .max-width .table table tr td .no {
+    color: var(--cr);
+}
+
+.dboard .max-width .table .box-link {
+    padding-left: 1%;
+}
+
+.dboard .max-width .table .box-link a {
+    padding-left: 1%;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--bl);
+}
+
+.dboard .max-width .table .box-link i {
+    padding-left: 1%;
+    font-size: 15px;
+    color: var(--bl);
+}
+
+
+
+
+/****************************************************************** 
+    # Brand Styling 
+******************************************************************/
+
+.brand {
+    background-color: var(--ash2);
+    height: 114vh;
+    width: 79.1vw;
+    position: absolute;
+    top: 6%;
+    left: 20%;
+    ;
+}
+
+.brand .header {
+    background-color: var(--ash);
+    border-radius: 5px;
+    height: 5vh;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: .8%;
+    left: 4%;
+    padding: 2%;
+}
+
+.brand .header h2 {
+    font-family: var(--av);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.brand .max-width {
+    background-color: var(--w);
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 72vw;
+    height: 80vh;
+    position: relative;
+    top: 13%;
+    left: 5%;
+    box-shadow: 3px 3px 2px 3px rgba(216, 215, 215, 0.955);
+    border-radius: 10px;
+}
+
+.brand .max-width .deco {
+    background-color: var(--pk);
+    font-size: 25px;
+    /* width: 20px;
+    height: 20px; */
+    padding: 10px 18px;
+    position: absolute;
+    top: -35px;
+    left: 20px;
+    border-radius: 5px;
+}
+
+.brand .max-width .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 15px;
+}
+
+.brand .max-width .top .left h2 {
+    font-family: var(--av), sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.brand .max-width .top .left p {
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    color: var(--ash3);
+}
+
+.brand .max-width .top .center {
+    width: 40%;
+    /* background-color: var(--w); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid var(--ash2);
+    border-radius: 15px;
+}
+
+.brand .max-width .top .center input {
+    width: 93%;
+    border: 1px solid #000;
+    outline: none;
+    border: none;
+    background-color: var(--w);
+    font-family: var(--av), sans-serif;
+    letter-spacing: 2.5px;
+}
+
+.brand .max-width .top .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand .max-width .top .right a {
+    padding: 7px;
+    background-color: var(--blu);
+    border-radius: 6px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    color: var(--w);
+}
+
+.brand .max-width .down {
+    max-height: 530px;
+    overflow-y: scroll;
+    /* overflow-x: hidden; */
+    margin: 10px 20px 0px 20px;
+}
+
+.brand .max-width .down .bTable {
+    min-width: max-content;
+    border-collapse: separate;
+    margin: 20px 10px;
+    text-align: left;
+    width: 100%;
+    font-family: var(--av), sans-serif;
+}
+
+.brand .max-width .down .bTable tbody tr td {
+    border-bottom: 1px solid var(--ash);
+}
+
+.brand .max-width .down .bTable thead tr th {
+    position: sticky;
+    background-color: var(--w);
+    top: 0px;
+}
+
+/****************************************************************** 
+    # Brand Form Styling 
+******************************************************************/
+
+.bForm {
+    position: absolute;
+    top: 7%;
+    left: 20%;
+    width: 79vw;
+    height: 95vh;
+    background-color: var(--ash2);
+}
+
+.bForm .header {
+    background-color: var(--ash);
+    border-radius: 5px;
+    height: 5vh;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: .2%;
+    left: 4%;
+    padding: 2%;
+}
+
+.bForm .header h2 {
+    font-family: var(--av);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.bForm .brForm {
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    transform: translate(-50px);
+    background-color: var(--w);
+    border-radius: 6px;
+    width: 65.5vw;
+    height: 55vh;
+    box-shadow: 3px 3px 2px 3px rgba(216, 215, 215, 0.955);
+}
+
+.bForm .brForm .max-width {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.bForm .brForm .max-width .row-t {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.bForm .brForm .max-width .row-t .items {
+    display: block;
+}
+
+.bForm .brForm .max-width .row-t .items label {
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 400;
+
+}
+
+.bForm .brForm .max-width .row-t .items input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--ash2);
+    padding: 3px 8px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+
+.bForm .brForm .max-width .row-c {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 2%;
+}
+
+.bForm .brForm .max-width .row-c .items {
+    display: block;
+}
+
+.bForm .brForm .max-width .row-c .items label {
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 400;
+}
+
+.bForm .brForm .max-width .row-c .items input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--ash2);
+    padding: 3px 8px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.bForm .brForm .max-width .row-c .items select {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--ash2);
+    padding: 3px 8px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.bForm .brForm .max-width .row-b {
+    margin: 5% 2%;
+}
+
+.bForm .brForm .max-width .row-b .items .radio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.bForm .brForm .max-width .row-b .items label {
+    font-size: 17px;
+    font-family: var(--av), sans-serif;
+    font-weight: 400;
+}
+
+.bForm .brForm .max-width .row-b .items select {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--ash2);
+    padding: 3px 8px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+}
+
+.bForm .brForm .max-width .btn input{
+    padding: 10px 20px;
+    background-color: var(--cr);
+    /* width: 15%; */
+    border: 1px solid var(--cr);
+    text-align: center;
+    font-family: var(--av), sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 6px;
+    color: var(--w);
+}
+
+/****************************************************************** 
+# Responsive Design 
+*******************************************************************/
+
+@media only screen and (max-width: 1200px) {
+
+    /* nav{
+        background-color: var(--blu);
+    } */
+
+    /************************************************ 
+    # Dashborad 
+    ************************************************/
+
+
+    .dboard {
+        position: absolute;
+        top: 9.2%;
+        width: 79vw;
+    }
+
+    aside .max-width .aside li {
+        padding: 10% 30% 10% 10%;
+    }
+
+    aside .max-width .aside2 li {
+        padding: 10% 30% 10% 10%;
+    }
+
+    .dboard .max-width .row {
+        position: absolute;
+        left: -5%;
+    }
+
+    .dboard .max-width .row .box {
+        width: 27vw;
+        height: 14vh;
+    }
+
+    .dboard .max-width .row .box .top .right p {
+        font-size: 16px;
+    }
+
+    .dboard .max-width .row .box .top .right h2 {
+        font-size: 20px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link a {
+        font-size: 16px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link i {
+        font-size: 15px;
+    }
+
+
+    /************************************************ 
+    # Brand Section
+    ************************************************/
+
+    .brand {
+        width: 79vw;
+    }
+
+    /* Brand Form Section */
+    .bForm .brForm .max-width .btn {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .bForm .brForm .max-width .row-t .items input {
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    
+
+    nav .max-width .left {
+        display: block;
+    }
+
+    nav .max-width .x.active {
+        left: 37%;
+    }
+
+    /************************************************ 
+    # Dashboard Section
+    ************************************************/
+
+    .dboard {
+        position: absolute;
+        left: 0;
+        top: 9.2%;
+        width: 97vw;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        z-index: 1;
+        width: 33vw;
+    }
+
+    aside .max-width .aside {
+        padding-top: 100px;
+    }
+
+    aside .max-width .aside li {
+        padding: 10% 30% 10% 5%;
+    }
+
+    aside .max-width .aside2 li {
+        padding: 10% 30% 10% 10%;
+    }
+
+    aside .max-width .aside li a {
+        font-size: 16px;
+    }
+
+    aside .max-width .aside2 li a {
+        font-size: 16px;
+    }
+    
+    .dboard{
+        width: 100vw;
+    }
+
+    .dboard .max-width .row {
+        position: absolute;
+        left: 10%;
+    }
+
+    .dboard .max-width .row {
+        position: absolute;
+        left: -5%;
+    }
+
+    .dboard .max-width .row .box {
+        width: 34vw;
+        height: 14vh;
+        margin-left: 10%;
+    }
+
+    .dboard .max-width .row .box .top .right p {
+        font-size: 16px;
+    }
+
+    .dboard .max-width .row .box .top .right h2 {
+        font-size: 20px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link a {
+        font-size: 16px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link i {
+        font-size: 15px;
+    }
+
+    .dboard .max-width .row2 {
+        position: absolute;
+        top: 16%;
+        left: 3%;
+    }
+
+
+    .dboard .max-width .row2 .box {
+        width: 34vw;
+        height: 14vh;
+        margin-left: 10%;
+    }
+
+    .dboard .max-width .table {
+        width: 85vw;
+        height: 45vh;
+    }
+
+
+    /************************************************ 
+    # Brand Section
+    ************************************************/
+
+    .brand {
+        position: absolute;
+        left: 0;
+        width: 98vw;
+    }
+
+    .brand .max-width {
+        position: absolute;
+        left: 3%;
+        width: 92vw;
+    }
+
+
+    /************************************************ 
+        # Brand Section
+        ************************************************/
+
+    .brand {
+        width: 79vw;
+    }
+
+    /* Brand Form Section */
+    .bForm {
+        position: absolute;
+        left: 0;
+        width: 100vw;
+    }
+
+    .bForm .brForm {
+        position: absolute;
+        left: 25%;
+    }
+
+    .bForm .brForm .max-width .btn {
+        font-size: 16px;
+        width: 20%;
+    }
+
+    .bForm .brForm .max-width .btn {
+        font-size: 16px;
+        width: 25%;
+    }
+
+    .bForm .brForm .max-width .row-c .items input {
+        width: 95%;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    nav .max-width .x.active {
+        left: 45%;
+    }
+    nav .max-width .left {
+        display: block;
+    }
+
+    nav .max-width .left svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    nav .max-width .logo {
+        display: none;
+    }
+
+    aside {
+        left: -550px;
+        width: 40vw;
+        position: fixed;
+    }
+
+    .dboard {
+        height: 90.5vh;
+        width: 99.5vw;
+    }
+
+    .dboard .header h2 {
+        font-size: 18px;
+    }
+
+    .dboard .header svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dboard .max-width .row {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 10%;
+    }
+
+    .dboard .max-width .row .box {
+        width: 60vw;
+        height: 17vh;
+    }
+
+    .dboard .max-width .row .box .top .left svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dboard .max-width .row .box .top .right p {
+        font-size: 18px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link a {
+        font-size: 17px;
+    }
+
+    .dboard .max-width .row2 {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 7%;
+        top: 58%;
+        width: 90%;
+    }
+    
+    .dboard .max-width .row2 .box {
+        width: 68%;
+        height: 17vh;
+    }
+
+    .dboard .max-width .table {
+        display: none;
+    }
+
+    /************************************************* 
+        # Brand Section 
+    **************************************************/
+    .brand {
+        position: absolute;
+        left: 0;
+        width: 97.5vw;
+    }
+
+    .brand .max-width .top .left h2 {
+        font-size: 18px;
+    }
+
+    .brand .max-width .top .left p {
+        font-size: 14px;
+    }
+
+    .brand .max-width .top .center input {
+        width: 80%;
+    }
+
+    .bForm .brForm .max-width .btn input{
+        padding: 10px 20px;
+    }
+}
+
+
+@media only screen and (min-width: 230px) and (max-width: 480px) {
+
+    nav .max-width .left {
+        display: block;
+    }
+
+    nav .max-width .x.active {
+        left: 90%;
+    }
+
+    nav .max-width .left svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    nav .max-width .logo {
+        display: none;
+    }
+
+    nav .max-width .right .user img {
+        margin-left: -20%;
+    }
+
+    nav .max-width .right .user p {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    aside {
+        left: -500px;
+        width: 80vw;
+        height: 108vh;
+        position: fixed;
+    }
+
+    .dboard {
+        position: absolute;
+        top: 8%;
+        height: 100vh;
+        width: 98vw;
+    }
+
+    .dboard .header h2 {
+        font-size: 18px;
+    }
+
+    .dboard .header svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .dboard .max-width .row {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 10%;
+        width: 90%;
+    }
+
+    .dboard .max-width .row .box {
+        width: 60vw;
+        height: 15vh;
+    }
+
+    .dboard .max-width .row .box .top .left svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .dboard .max-width .row .box .top .right p {
+        font-size: 18px;
+    }
+
+    .dboard .max-width .row .box .bottom .box-link a {
+        font-size: 17px;
+    }
+
+    .dboard .max-width .row2 {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 10%;
+        top: 55%;
+        width: 90%;
+    }
+    .dboard .max-width .row2 .box{
+        width: 68%;
+    }
+
+    .dboard .max-width .table {
+        display: none;
+    }
+
+    .brand {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 99vw;
+        height: 101vh;
+    }
+
+    .brand .max-width {
+        height: 70vh;
+    }
+
+    .brand .max-width .top .center {
+        display: none;
+    }
+
+    /* .brand .max-width {
+             position: absolute;
+             left: 3%;
+             width: 92vw;
+         } */
+    .bForm .brForm .max-width .btn input{
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+
+    .bForm .brForm .max-width .row-t,
+    .row-b,
+    .row-c {
+        display: block;
+    }
+
+    .bForm .brForm {
+        width: 90vw;
+    }
+
+}
+
