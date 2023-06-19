@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1, user-scalable=0">
     <title>Shopping Cart || Php Project</title>
-    <link rel="stylesheet" href="\css\style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -113,34 +113,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="row2">
-                    <div class="box">
-                        <div class="top">
-                            <div class="left">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-user">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <div class="right">
-                                <p>Customers</p>
-                                <h4>0</h4>
-                            </div>
+            </div>
+            <div class="row2">
+                <div class="box">
+                    <div class="top">
+                        <div class="left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-user">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
                         </div>
-                        <div class="bottom">
-                            <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
-                            </div>
+                        <div class="right">
+                            <p>Customers</p>
+                            <h4>0</h4>
                         </div>
                     </div>
-                    <!-- <div class="box">
-
-            </div>
-            <div class="box">
-
-            </div> -->
+                    <div class="bottom">
+                        <div class="box-link">
+                            <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
