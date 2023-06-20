@@ -47,7 +47,15 @@ aside {
     color: var(--w);
     z-index: 10;
 }
-
+aside .logo {
+    color: var(--p);
+    font-size: 20px;
+    font-family: var(--av);
+    z-index: 999;
+    position: absolute;
+    left: 5%;
+    top: 3%;
+}
 aside.active {
     left: 0%;
 }
@@ -135,17 +143,15 @@ nav .max-width .left {
     display: none;
 }
 
-nav .max-width .logo {
-    color: var(--p);
-    font-size: 20px;
-    font-family: var(--av);
-    z-index: 999;
-}
+
 
 nav .max-width .right {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    right: 3%;
+    top: 6%;
 }
 
 nav .max-width .x {
