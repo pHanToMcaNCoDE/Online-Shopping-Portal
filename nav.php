@@ -38,10 +38,10 @@
                     <line x1="6" y1="6" x2="18" y2="18"></line>
                 </svg>
             </div>
-            <a class="logo" href="https://victory-odumeh.vercel.app/">
+            <!-- <a class="logo" href="https://victory-odumeh.vercel.app/">
                 <i class="fa-solid fa-ghost fa-bounce"></i>
                 phantomcancode
-            </a>
+            </a> -->
             <div class="right">
                 <li>
                     <a href="#"><i class="fa-solid fa-bell fa-shake"></i></a>
