@@ -14,6 +14,11 @@
 
     <!-- Aside Bar -->
     <aside>
+
+        <a class="logo" href="https://victory-odumeh.vercel.app/">
+            <i class="fa-solid fa-ghost fa-bounce"></i>
+            phantomcancode
+        </a>
         <div class="max-width">
             <ul class="aside">
                 <li>
