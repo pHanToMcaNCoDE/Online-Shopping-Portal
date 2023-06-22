@@ -253,8 +253,8 @@ nav .max-width .right .user p {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 7%;
-    left: 0%;
+    top: 10%;
+    left: 20%;
 }
 
 .dboard .max-width .row .box {
@@ -476,7 +476,7 @@ td {
 ******************************************************************/
 
 .brand {
-    background-color: var(--ash2);
+    background-color: var(--ash4);
     height: 114vh;
     width: 79.1vw;
     position: absolute;
