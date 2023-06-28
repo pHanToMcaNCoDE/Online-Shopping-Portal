@@ -235,10 +235,19 @@ main .table{
     display: flex;
     flex-direction: column;
 }
-.table .stats tr td{
+.table .stats{
+    margin-top: 1em;
+}
+.stats td{
     padding: .8em;
     border-bottom: 1px solid var(--ash);
 }
-.table .stats tr td:last-child{
+.stats td:last-child{
     border-bottom: none;
+}
+.stats .yes{
+    color: var(--g);
+}
+.stats .no{
+    color: var(--cr);
 }
