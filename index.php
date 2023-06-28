@@ -57,7 +57,7 @@
     <!---------------------------------------------------------------------------------- 
     # Dashboard
 ------------------------------------------------------------------------------------>
-    <section class="dboard">
+    <section class="dashboard">
         <div class="max-width">
             <aside>
                 <a class="logo" href="https://victory-odumeh.vercel.app/">
