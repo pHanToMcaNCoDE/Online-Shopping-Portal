@@ -44,9 +44,71 @@ body{
 /********************************************************************
 # Aside Styling 
 *********************************************************************/
+.dashboard aside {
+    width: 30%;
+    padding: 1em;
+    height: 100vh;
+    background-color: var(--bl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+aside .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .aside-up {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: center;
+}
+
+.content li {
+    margin-top: 2.3em;
+}
+
+.content a {
+    color: var(--ash);
+}
+
+.content .aside-up {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: center;
+    border-bottom: .2px solid var(--w);
+    padding: 1em 3em;
+}
+.content svg {
+    color: var(--ash);
+    margin-right: .2em;
+}
+
+.content .aside-down {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: justify;
+    align-items: center;
+}
+
+.aside-down i {
+    color: var(--ash);
+    margin-right: .2em;
+    font-size: 1.2rem;
+}
 aside.active {
     left: 0%;
+}
+aside .x{
+    display: none;
 }
 
 
@@ -74,9 +136,6 @@ nav .right{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #000;
 }
 .right li{
     list-style: none;
@@ -140,64 +199,9 @@ nav .left svg{
 .dashboard .max-width{
     width: 100%;
     max-width: 900px;
-    /* margin: 0 auto; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.dashboard aside{
-    width: 30%;
-    padding: 1em;
-    height: 100vh;
-    background-color: var(--bl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-aside .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.content .aside-up{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: justify;
-    align-items: center;
-}
-.content li{
-    margin-top: 2.3em;
-}
-.content a{
-    color: var(--ash);
-}
-.content .aside-up {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: justify;
-    align-items: center;
-    border-bottom: .2px solid var(--w);
-    padding: 1em 3em;
-}
-.content svg{
-    color: var(--ash);
-    margin-right: .2em;
-}
-.content .aside-down {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: justify;
-    align-items: center;
-}
-.aside-down i {
-    color: var(--ash);
-    margin-right: .2em;
-    font-size: 1.2rem;
 }
 .dashboard main{
     width: 70%;
@@ -218,7 +222,7 @@ main .header{
     padding: .3em;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-top: -.43em;
+    margin-top: -1.5em;
 }
 .header h2{
     font-weight: 400;
@@ -231,7 +235,7 @@ main .header{
     align-items: center;
     border-left: 4px solid var(--pk);
     border-radius: 6px;
-    padding: 1.5em 6.5em 1em 1em;
+    padding: 1.5em 5.8em 1em 1em;
     margin: 2em;
 }
 .box .top{
@@ -240,7 +244,6 @@ main .header{
 }
 .top .left{
     width: 70%;
-    border-bottom: 2px solid var(--ash3);
 }
 .top .right{
     width: 30%;
@@ -253,6 +256,14 @@ main .header{
 .top .right h4 {
     font-size: 1.3em;
     padding-left: .3em;
+}
+.bottom .box-link{
+    border-top: 2px solid var(--ash3);
+    text-align-last: left;
+}
+.box-link a{
+    color: var(--ash3);
+    font-size: 1.1rem;
 }
 main .table{
     margin-left: 1.6em;
