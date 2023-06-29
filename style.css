@@ -45,8 +45,8 @@ body {
 /********************************************************************
 # Aside Styling 
 *********************************************************************/
-.dashboard aside {
-    width: 35%;
+aside {
+    width: 20vw;
     padding: 1em;
     height: 100vh;
     background-color: var(--bl);
@@ -342,11 +342,6 @@ main .table {
     justify-content: space-between;
     align-items: center;
 }
-.max-width aside{
-    width: 35%;
-    background-color: var(--bl);
-    height: 100vh;
-}
 .max-width .bnd{
     margin-top: 4em;
     width: 100%;
@@ -449,7 +444,252 @@ main .table {
     padding: 1%;
 }
 
+/* Product section */
 
+.product {
+    height: 100vh;
+    background-color: var(--ash4);
+}
+
+.product .max-width {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.max-width .pdt {
+    margin-top: 4em;
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--w);
+    border-radius: 6px;
+    position: absolute;
+    left: 23%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdt .deco {
+    background-color: var(--pk);
+    position: absolute;
+    left: 3%;
+    top: -6%;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.deco i {
+    font-size: 1.3rem;
+}
+
+.pdt .header {
+    background-color: var(--ash2);
+    border: 1px solid var(--ash2);
+    padding: .3em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    top: -17.6%;
+    width: 100%;
+}
+
+.header h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.pdt .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.top .center {
+    width: 70%;
+    border: 1px solid var(--ash3);
+    padding: .5em 1em;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+
+.center input {
+    width: 80%;
+    padding: .4em;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    word-spacing: .2em;
+    font-weight: 300;
+}
+
+.pdt .right a {
+    background-color: var(--blu);
+    padding: .5em .7em;
+    color: var(--w);
+    border-radius: 6px;
+}
+
+.pdt .down {
+    max-height: 580px;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 20px auto 0 3em;
+}
+
+.pdt .down table {
+    min-width: max-content;
+    border-collapse: separate;
+    margin: 20px 10px 10px 20px;
+    text-align: left;
+    width: 55vw;
+    height: 50vh;
+    font-family: var(--av), sans-serif;
+}
+
+.pdt .down table tbody tr td {
+    border-bottom: 1px solid var(--ash);
+    padding: 1.2%;
+    text-align: center;
+}
+
+.pdt .down table thead tr th {
+    position: sticky;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0px 2px rgba(216, 215, 215, 0.955);
+    z-index: 1;
+    top: 0px;
+    padding: 1%;
+}
+
+/* Brand section */
+
+.order {
+    height: 100vh;
+    background-color: var(--ash4);
+}
+
+.order .max-width {
+    width: 100%;
+    max-width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.max-width .ord {
+    margin-top: 4em;
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--w);
+    border-radius: 6px;
+    position: absolute;
+    left: 23%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ord .deco {
+    background-color: var(--pk);
+    position: absolute;
+    left: 3%;
+    top: -6%;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.deco i {
+    font-size: 1.3rem;
+}
+
+.ord .header {
+    background-color: var(--ash2);
+    border: 1px solid var(--ash2);
+    padding: .3em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    top: -17.6%;
+    width: 100%;
+}
+
+.header h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.ord .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    /* width: 100%; */
+}
+
+.top .center {
+    width: 70%;
+    border: 1px solid var(--ash3);
+    padding: .5em 1em;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+
+.center input {
+    width: 80%;
+    padding: .4em;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    word-spacing: .2em;
+    font-weight: 300;
+}
+
+.ord .right a {
+    background-color: var(--blu);
+    padding: .5em .7em;
+    color: var(--w);
+    border-radius: 6px;
+}
+
+.ord .down {
+    max-height: 580px;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 20px auto 0 3em;
+}
+    
+.pdt .down table {
+    min-width: max-content;
+    border-collapse: separate;
+    margin: 20px 10px 10px 20px;
+    text-align: left;
+    width: 40vw;
+    height: 50vh;
+    font-family: var(--av), sans-serif;
+}
+
+.ord .down table tbody tr td {
+    border-bottom: 1px solid var(--ash);
+    padding: 1.2%;
+    text-align: center;
+}
+
+.ord .down table thead tr th {
+    position: sticky;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0px 2px rgba(216, 215, 215, 0.955);
+    z-index: 1;
+    top: 0px;
+    padding: 1%;
+}
 
 
 
@@ -503,6 +743,8 @@ main .table {
     main .header {
         display: none;
     }
+
+    /* Brands Page */
 
     .max-width .bnd {
         position: absolute;
@@ -572,6 +814,147 @@ main .table {
     .bnd .down table {
         margin: 20px 5px 10px 40px;
     }
+
+    /* Products Page */
+
+    .max-width .pdt{
+        position: absolute;
+        top: 12%;
+        left: 0%;
+    }
+    .pdt .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .pdt .header {
+        background-color: var(--ash2);
+        border: 1px solid var(--ash2);
+        padding: .3em;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        position: absolute;
+        top: -17.6%;
+        width: 100%;
+    }
+
+    .header h2 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .pdt .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .pdt .right a {
+        font-size: .9rem;
+    }
+
+    .pdt .down {
+        margin-left: 3%;
+    }
+
+    .pdt .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+    /* Orders Page */
+
+    .max-width .ord {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+    }
+
+    .ord .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .ord .header {
+        background-color: var(--ash2);
+        border: 1px solid var(--ash2);
+        padding: .3em;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        position: absolute;
+        top: -17.6%;
+        width: 100%;
+    }
+
+    .header h2 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .ord .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .ord .right a {
+        font-size: .9rem;
+    }
+
+    .ord .down {
+        margin-left: 3%;
+    }
+
+    .ord .down table {
+        margin: 20px 5px 10px 40px;
+    }
 }
 
 
@@ -623,6 +1006,8 @@ main .table {
     main .header {
         display: none;
     }
+
+    /* Brands Page */
 
     .max-width .bnd {
         position: absolute;
@@ -681,6 +1066,127 @@ main .table {
     .bnd .down table {
         margin: 20px 5px 10px 40px;
     }
+
+    /* Products Page */
+
+    .max-width .pdt {
+        position: absolute;
+        top: 12%;
+        width: 95%;
+        left: 3%;
+    }
+
+    .pdt .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .pdt .header {
+        display: none;
+    }
+
+    .pdt .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .pdt .right a {
+        font-size: .9rem;
+    }
+
+    .pdt .down {
+        margin-left: 3%;
+    }
+
+    .pdt .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+
+    /* Brands Page */
+
+    .max-width .ord {
+        position: absolute;
+        top: 12%;
+        width: 95%;
+        left: 3%;
+    }
+
+    .ord .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .ord .header {
+        display: none;
+    }
+
+    .ord .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .ord .right a {
+        font-size: .9rem;
+    }
+
+    .ord .down {
+        margin-left: 3%;
+    }
+
+    .ord .down table {
+        margin: 20px 5px 10px 40px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -728,14 +1234,136 @@ main .table {
         display: none;
     }
 
-        .max-width .bnd {
+    /* Brands Page */
+
+    .max-width .bnd {
+        position: absolute;
+        top: 12%;
+        width: 95%;
+        left: 3%;
+    }
+
+    .bnd .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .bnd .header {
+        display: none;
+    }
+
+    .bnd .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .bnd .right a {
+        font-size: .9rem;
+    }
+
+    .bnd .down {
+        margin-left: 3%;
+    }
+
+    .bnd .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+    /* Products Page */
+
+    .max-width .pdt {
+        position: absolute;
+        top: 12%;
+        width: 95%;
+        left: 3%;
+    }
+
+    .pdt .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .pdt .header {
+        display: none;
+    }
+
+    .pdt .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .pdt .right a {
+        font-size: .9rem;
+    }
+
+    .pdt .down {
+        margin-left: 3%;
+    }
+
+    .pdt .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+        /* Orders Page */
+    
+        .max-width .ord {
             position: absolute;
             top: 12%;
             width: 95%;
             left: 3%;
         }
     
-        .bnd .deco {
+        .ord .deco {
             background-color: var(--pk);
             position: absolute;
             left: 3%;
@@ -748,11 +1376,11 @@ main .table {
             font-size: 1.3rem;
         }
     
-        .bnd .header {
+        .ord .header {
             display: none;
         }
     
-        .bnd .top {
+        .ord .top {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -774,15 +1402,15 @@ main .table {
             font-weight: 300;
         }
     
-        .bnd .right a {
+        .ord .right a {
             font-size: .9rem;
         }
     
-        .bnd .down {
+        .ord .down {
             margin-left: 3%;
         }
     
-        .bnd .down table {
+        .ord .down table {
             margin: 20px 5px 10px 40px;
         }
 }
@@ -819,14 +1447,136 @@ main .table {
         margin-top: -2.3em;
     }
 
-        .max-width .bnd {
+    /* Brands Page */
+
+    .max-width .bnd {
+        position: absolute;
+        top: 12%;
+        width: 73%;
+        left: 24%;
+    }
+
+    .bnd .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .bnd .header {
+        display: none;
+    }
+
+    .bnd .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .bnd .right a {
+        font-size: .9rem;
+    }
+
+    .bnd .down {
+        margin-left: 3%;
+    }
+
+    .bnd .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+    /* Products Page */
+
+    .max-width .pdt {
+        position: absolute;
+        top: 12%;
+        width: 73%;
+        left: 24%;
+    }
+
+    .pdt .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .pdt .header {
+        display: none;
+    }
+
+    .pdt .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .pdt .right a {
+        font-size: .9rem;
+    }
+
+    .pdt .down {
+        margin-left: 3%;
+    }
+
+    .pdt .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+        /* Orders Page */
+    
+        .max-width .ord {
             position: absolute;
             top: 12%;
             width: 73%;
             left: 24%;
         }
     
-        .bnd .deco {
+        .ord .deco {
             background-color: var(--pk);
             position: absolute;
             left: 3%;
@@ -839,11 +1589,11 @@ main .table {
             font-size: 1.3rem;
         }
     
-        .bnd .header {
+        .ord .header {
             display: none;
         }
     
-        .bnd .top {
+        .ord .top {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -865,15 +1615,15 @@ main .table {
             font-weight: 300;
         }
     
-        .bnd .right a {
+        .ord .right a {
             font-size: .9rem;
         }
     
-        .bnd .down {
+        .ord .down {
             margin-left: 3%;
         }
     
-        .bnd .down table {
+        .ord .down table {
             margin: 20px 5px 10px 40px;
         }
 }
