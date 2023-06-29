@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1, user-scalable=0">
     <title>Shopping Cart || Php Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
 
@@ -62,9 +62,9 @@
                     phantomcancode
                 </a>
                 <div class="content">
-                    <ul>
+                    <ul class="aside-up">
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-grid">
                                 <rect x="3" y="3" width="7" height="7"></rect>
@@ -128,7 +128,7 @@
                             <a href="#">Vendors</a>
                         </li>
                     </ul>
-                    <ul class="aside2">
+                    <ul class="aside-down">
                         <li>
                             <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
                             <a href="#">Settings</a>
