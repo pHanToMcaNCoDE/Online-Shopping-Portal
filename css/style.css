@@ -16,7 +16,7 @@
     --g2: #caf2af;
     --cr2: rgb(247, 128, 152);
     --bl: #000;
-    --ash: #e5e5e5; 
+    --ash: #e5e5e5;
     --ash2: #efeded;
     --ash3: #474747;
     --w: #ffffff;
@@ -37,7 +37,8 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: var(--av), sans-serif;
 }
 
@@ -86,6 +87,7 @@ aside .content {
     border-bottom: .2px solid var(--w);
     padding: 1em 3em;
 }
+
 .content svg {
     color: var(--ash);
     margin-right: .2em;
@@ -104,10 +106,12 @@ aside .content {
     margin-right: .2em;
     font-size: 1.2rem;
 }
+
 aside.active {
     left: 0%;
 }
-aside .x{
+
+aside .x {
     display: none;
 }
 
@@ -116,7 +120,7 @@ aside .x{
 /********************************************************************
 # Navigation Styling 
 *********************************************************************/
-header nav{
+header nav {
     background-color: var(--w);
     padding: 1em;
     width: 100%;
@@ -124,29 +128,34 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
+
 nav a {
     font-size: 20px;
 }
-nav .left{
+
+nav .left {
     width: 80%;
 }
 
-nav .right{
+nav .right {
     width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.right li{
+
+.right li {
     list-style: none;
     position: relative;
 }
-.right i{
+
+.right i {
     font-size: 20px;
     position: relative;
     color: var(--bl);
 }
-.right .num{
+
+.right .num {
     position: absolute;
     top: -6px;
     right: -6px;
@@ -160,17 +169,20 @@ nav .right{
     text-align: center;
     border: 1px solid var(--ash);
 }
-.right .user{
+
+.right .user {
     display: flex;
     align-items: center;
     margin-left: 2em;
 }
-.right img{
+
+.right img {
     width: 15%;
     border-radius: 50%;
     object-fit: cover;
 }
-.right p{
+
+.right p {
     margin-left: .23em;
 }
 
@@ -184,51 +196,61 @@ nav .max-width .x {
 nav .max-width .x.active {
     left: 28%;
 }
-nav .left svg{
+
+nav .left svg {
     display: none;
 }
+
 /********************************************************************
 # Main Dashboard Styling 
 *********************************************************************/
 
-.dashboard{
+.dashboard {
     height: 100vh;
     background-color: var(--ash4);
 }
 
-.dashboard .max-width{
+.dashboard .max-width {
     width: 100%;
     max-width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.dashboard main{
+
+.dashboard main {
     width: 70%;
     position: absolute;
     top: 12%;
     left: 25%;
 }
-main .row{
+
+main .row {
     width: 100%;
     max-width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1em;
 }
-main .header{
+
+main .header {
     background-color: var(--ash2);
     border: 1px solid var(--ash2);
     padding: .3em;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    margin-top: -1.5em;
+    position: absolute;
+    top: -3.5%;
+    width: 90%;
 }
-.header h2{
+
+.header h2 {
     font-weight: 400;
     font-size: 1.4em;
 }
-.row .box{
+
+.row .box {
     background-color: var(--w);
     display: flex;
     flex-direction: column;
@@ -238,34 +260,42 @@ main .header{
     padding: 1.5em 5.8em 1em 1em;
     margin: 2em;
 }
-.box .top{
+
+.box .top {
     display: flex;
     align-items: center;
 }
-.top .left{
+
+.top .left {
     width: 70%;
 }
-.top .right{
+
+.top .right {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
-.top .right p{
+
+.top .right p {
     font-size: 1.2em;
 }
+
 .top .right h4 {
     font-size: 1.3em;
     padding-left: .3em;
 }
-.bottom .box-link{
+
+.bottom .box-link {
     border-top: 2px solid var(--ash3);
     text-align-last: left;
 }
-.box-link a{
+
+.box-link a {
     color: var(--ash3);
     font-size: 1.1rem;
 }
-main .table{
+
+main .table {
     margin-left: 1.6em;
     max-width: 100%;
     max-width: 620px;
@@ -275,19 +305,205 @@ main .table{
     display: flex;
     flex-direction: column;
 }
-.table .stats{
+
+.table .stats {
     margin-top: 1em;
 }
-.stats td{
+
+.stats td {
     padding: .8em;
     border-bottom: 1px solid var(--ash);
 }
-.stats td:last-child{
+
+.stats td:last-child {
     border-bottom: none;
 }
-.stats .yes{
+
+.stats .yes {
     color: var(--g);
 }
-.stats .no{
+
+.stats .no {
     color: var(--cr);
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 270px) and (max-width: 480px) {
+
+    /* Navigation  */
+
+    nav .left .logo {
+        display: none;
+    }
+
+    nav .left svg {
+        display: flex;
+        width: 15%;
+    }
+
+    nav .right {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    /* Aside bar */
+
+    .dashboard aside {
+        position: fixed;
+        left: -100%;
+    }
+
+    /* Main section */
+
+    .dashboard {
+        height: 140vh;
+    }
+
+    .dashboard main{
+        position: absolute;
+        top: 12%;
+        left: 14%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    main .table {
+        display: none;
+    }
+
+    main .header {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Navigation  */
+
+    nav .left .logo {
+        display: none;
+    }
+
+    nav .left svg {
+        display: flex;
+        width: 15%;
+    }
+
+    nav .right {
+        width: 85%;
+        font-size: 15px;
+    }
+
+    /* Aside bar */
+
+    .dashboard aside {
+        position: fixed;
+        left: -100%;
+    }
+
+    /* Main section */
+
+    .dashboard {
+        height: 140vh;
+    }
+
+    .dashboard main {
+        position: absolute;
+        top: 12%;
+        left: 14%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    main .table {
+        display: none;
+    }
+
+    main .header {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Navigation  */
+    nav .left{
+        width: 70%;
+    }
+    nav .left .logo {
+        display: flex;
+    }
+
+    nav .left svg {
+        display: none;
+    }
+
+    nav .right {
+        width: 30%;
+        font-size: 15px;
+    }
+
+    /* Aside bar */
+
+    .dashboard aside {
+        position: fixed;
+        top: 0%;
+        width: 32%;
+    }
+
+    /* Main section */
+
+    .dashboard {
+        height: 140vh;
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    main .table {
+        display: none;
+    }
+
+    main .header {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    /* Aside bar */
+
+    .dashboard aside{
+        width: 28%;
+    }
+
+    /* Main section */
+
+    .dashboard {
+        height: 100vh;
+    }
+    .dashboard main{
+        position: absolute;
+        left: 20%;
+    }
+    .row {
+        flex-direction: row;
+    }
+
+    main .table {
+        display: none;
+    }
+
+    main .header {
+        display: flex;
+        margin-left: 2em;
+        margin-top: -2.3em;
+    }
 }
