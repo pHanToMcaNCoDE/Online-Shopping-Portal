@@ -33,14 +33,6 @@
                     <line x1="3" y1="18" x2="21" y2="18"></line>
                 </svg>
             </div>
-            <div class="x">
-                <svg class="x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-x">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </div>
             <div class="right">
                 <li>
                     <a href="#"><i class="fa-solid fa-bell fa-shake"></i></a>
@@ -61,6 +53,14 @@
     <section class="dashboard">
         <div class="max-width">
             <aside>
+                <div class="x">
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </div>
                 <div class="content">
                     <ul class="aside-up">
                         <li>
@@ -176,7 +176,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -246,7 +246,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
