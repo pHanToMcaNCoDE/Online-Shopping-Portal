@@ -50,6 +50,7 @@ aside.active {
 }
 
 
+
 /********************************************************************
 # Navigation Styling 
 *********************************************************************/
@@ -61,15 +62,21 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
-.left{
-    width: 50%;
+nav a {
+    font-size: 20px;
+}
+nav .left{
+    width: 80%;
 }
 
-.right{
-    width: 50%;
+nav .right{
+    width: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #000;
 }
 .right li{
     list-style: none;
@@ -97,9 +104,10 @@ header nav{
 .right .user{
     display: flex;
     align-items: center;
+    margin-left: 2em;
 }
 .right img{
-    width: 8%;
+    width: 15%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -117,7 +125,9 @@ nav .max-width .x {
 nav .max-width .x.active {
     left: 28%;
 }
-
+nav .left svg{
+    display: none;
+}
 /********************************************************************
 # Main Dashboard Styling 
 *********************************************************************/
@@ -144,9 +154,7 @@ nav .max-width .x.active {
     flex-direction: column;
     align-items: center;
 }
-aside a{
-    font-size: 20px;
-}
+
 aside .content{
     display: flex;
     flex-direction: column;
