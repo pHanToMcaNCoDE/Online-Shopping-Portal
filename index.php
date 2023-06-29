@@ -21,6 +21,10 @@
     <header>
         <nav>
             <div class="left">
+                <a class="logo" href="https://victory-odumeh.vercel.app/">
+                    <i class="fa-solid fa-ghost fa-bounce"></i>
+                    phantomcancode
+                </a>
                 <svg id="left" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                     class="feather feather-menu">
@@ -57,10 +61,6 @@
     <section class="dashboard">
         <div class="max-width">
             <aside>
-                <a class="logo" href="https://victory-odumeh.vercel.app/">
-                    <i class="fa-solid fa-ghost fa-bounce"></i>
-                    phantomcancode
-                </a>
                 <div class="content">
                     <ul class="aside-up">
                         <li>
