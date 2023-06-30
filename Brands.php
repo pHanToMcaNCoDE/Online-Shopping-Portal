@@ -29,10 +29,10 @@
                 </svg>
             </div>
             <div class="right">
-                <li>
+                <!-- <li>
                     <a href="#"><i class="fa-solid fa-bell fa-shake"></i></a>
                     <div class="num">1</div>
-                </li>
+                </li> -->
                 <div class="user">
                     <img src="assets/vick.png" alt="username">
                     <p>Victory Odumeh</p>
