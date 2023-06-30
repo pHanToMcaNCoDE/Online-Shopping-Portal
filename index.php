@@ -131,11 +131,11 @@
                     </ul>
                     <ul class="aside-down">
                         <li>
-                            <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
+                            <i class="fa-solid fa-gear"></i>
                             <a href="#">Settings</a>
                         </li>
                         <li>
-                            <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
                             <a href="#">Sign-out</a>
                         </li>
                     </ul>
