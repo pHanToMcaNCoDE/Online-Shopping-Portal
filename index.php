@@ -34,10 +34,10 @@
                 </svg>
             </div>
             <div class="right">
-                <li>
+                <!-- <li>
                     <a href="#"><i class="fa-solid fa-bell fa-shake"></i></a>
                     <div class="num">1</div>
-                </li>
+                </li> -->
                 <div class="user">
                     <img src="assets/vick.png" alt="username">
                     <p>Victory Odumeh</p>
@@ -65,7 +65,7 @@
                 <div class="content">
                     <ul class="aside-up">
                         <li>
-                            <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns=" http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-grid">
                                 <rect x="3" y="3" width="7" height="7"></rect>
@@ -76,7 +76,7 @@
                             <a href="index.php">Dashboard</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-star">
                                 <polygon
@@ -86,7 +86,7 @@
                             <a href="Brands.php">Brands</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-gift">
                                 <polyline points="20 12 20 22 4 22 4 12"></polyline>
@@ -98,7 +98,7 @@
                             <a href="Products.php">Products</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-truck">
                                 <rect x="1" y="3" width="15" height="13"></rect>
@@ -109,7 +109,7 @@
                             <a href="Orders.php">Orders</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-user">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -118,7 +118,7 @@
                             <a href="Customers.php">Customers</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-users">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
