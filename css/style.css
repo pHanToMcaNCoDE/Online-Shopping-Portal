@@ -45,10 +45,10 @@ body {
 /********************************************************************
 # Aside Styling 
 *********************************************************************/
-aside {
-    width: 25%;
+aside{
+    /* width: 20vw; */
     padding: 1em;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: var(--bl);
     display: flex;
     flex-direction: column;
