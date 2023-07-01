@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale= 1, user-scalable=0">
     <title>Shopping Cart || Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
 
@@ -273,73 +273,144 @@
                     </div>
                 </div>
 
-                <div class="table">
-                    <div class="header2">
-                        <h2>Recent orders</h2>
-                        <p>from collection by order</p>
-                    </div>
-                    <table class="stats">
-                        <tr>
-                            <th>#</th>
-                            <th>Id</th>
-                            <th>Customer Fullname</th>
-                            <th>Delivery Date</th>
-                            <th>Status</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>prd1/2eC</td>
-                            <td>Kia spotage</td>
-                            <td>11-12-23</td>
-                            <td>
-                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>prd2/1eC</td>
-                            <td>Mercedes c300</td>
-                            <td>12-02-22</td>
-                            <td>
-                                <svg class="yes" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>prd3/fR12</td>
-                            <td>Indomie</td>
-                            <td>11-11-22</td>
-                            <td>
-                                <svg class="no" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="15" y1="9" x2="9" y2="15"></line>
-                                    <line x1="9" y1="9" x2="15" y2="15"></line>
-                                </svg>
-                            </td>
-                        </tr>
-                        <div class="box-link">
-                            <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                <div class="display">
+                    <div class="table">
+                        <div class="header2">
+                            <h2>Recent orders</h2>
+                            <p>from collection by order</p>
                         </div>
-                    </table>
+                        <table class="stats">
+                            <tr>
+                                <th>#</th>
+                                <th>Id</th>
+                                <th>Customer Fullname</th>
+                                <th>Delivery Date</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>prd1/2eC</td>
+                                <td>Kia spotage</td>
+                                <td>11-12-23</td>
+                                <td>
+                                    <svg class="yes" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-check-circle">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>prd2/1eC</td>
+                                <td>Mercedes c300</td>
+                                <td>12-02-22</td>
+                                <td>
+                                    <svg class="yes" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="feather feather-check-circle">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>prd3/fR12</td>
+                                <td>Indomie</td>
+                                <td>11-11-22</td>
+                                <td>
+                                    <svg class="no" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    </svg>
+                                </td>
+                            </tr>
+                            <div class="box-link">
+                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                            </div>
+                        </table>
+                    </div>
+
+                    <div class="cust-tbl">
+                        <div class="conta">
+                            <div class="c-top">
+                                <h2>Our loyal Customers</h2>
+                            </div>
+                            <div class="c-btm">
+
+                                <table class="stats">
+                                    <tr>
+                                        <th>Customer</th>
+                                        <th>Full Name</th>
+                                        <th>Sex</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/stats/1.jpg"
+                                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
+                                                alt="">
+                                        </td>
+                                        <td>Lilian Smith</td>
+                                        <td>Female</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/stats/2.jpg"
+                                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
+                                                alt="">
+                                        </td>
+                                        <td>Samuel James Simons</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/stats/3.jpg"
+                                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
+                                                alt="">
+                                        </td>
+                                        <td>Idris Beckhamp</td>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/stats/4.jpg"
+                                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
+                                                alt="">
+                                        </td>
+                                        <td>Priyanka Mustaffi</td>
+                                        <td>Female</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/stats/5.jpg"
+                                                style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
+                                                alt="">
+                                        </td>
+                                        <td>Xia Ping</td>
+                                        <td>Female</td>
+                                    </tr>
+                                    <div class="box-link">
+                                        <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
     </section>
 
 
-    <script src="js/script.js"></script>
+    <script src=" js/script.js">
+    </script>
 </body>
 
 </html>
