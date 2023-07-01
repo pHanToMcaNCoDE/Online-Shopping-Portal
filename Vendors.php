@@ -43,7 +43,7 @@
 
     <section class="vendor">
         <div class="max-width">
-            <aside style="width: 35%; height: 100vh;">
+            <aside style="width: 30%; height: 100vh;">
                 <div class=" x">
                     <svg class="x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -122,7 +122,7 @@
                     <ul class="aside-down">
                         <li>
                             <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
-                            <a href="#">Settings</a>
+                            <a href="Settings.php">Settings</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
