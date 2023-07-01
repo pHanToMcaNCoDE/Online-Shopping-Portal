@@ -45,7 +45,7 @@ body {
 /********************************************************************
 # Aside Styling 
 *********************************************************************/
-aside{
+aside {
     /* width: 20vw; */
     padding: 1em;
     /* height: 100vh; */
@@ -70,6 +70,7 @@ aside .content {
     justify-content: justify;
     align-items: center;
 }
+
 .content li {
     margin-top: 1.2em;
     padding: 1em;
@@ -81,6 +82,7 @@ aside .content {
     justify-content: space-between;
     align-items: center;
 }
+
 .content .current {
     border-left: 3px solid var(--w);
 }
@@ -101,6 +103,7 @@ aside .content {
     width: 100%;
     height: 100%;
 }
+
 .content .aside-up a {
     font-size: 1.2em;
     width: 100%;
@@ -122,6 +125,7 @@ aside .content {
     width: 100%;
     height: 100%;
 }
+
 .content .aside-down a {
     font-size: 1.2em;
     width: 100%;
@@ -249,7 +253,7 @@ nav .left svg {
     width: 75%;
     position: absolute;
     top: 12%;
-    left: 23%;
+    left: 21%;
 }
 
 main .row {
@@ -322,9 +326,38 @@ main .header {
     font-size: 1.1rem;
 }
 
-main .table {
+.display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display .table {
+    width: 63%;
+}
+
+.display .cust-tbl {
+    width: 37%;
+    margin-left: 1em;
+}
+
+.cust-tbl {
+    margin-top: -20%;
+}
+
+.conta {
+    padding: 1em;
+    background-color: var(--w);
+}
+
+.cust-tbl .stats {
+    height: 100%;
+}
+
+.display .table {
     margin-left: 1.6em;
-    max-width: 100%;
+    max-width: 50%;
     max-width: 620px;
     background-color: var(--w);
     padding: 1em;
@@ -333,7 +366,7 @@ main .table {
     flex-direction: column;
 }
 
-.table .stats {
+.display .table .stats {
     margin-top: 1em;
 }
 
@@ -355,20 +388,23 @@ main .table {
 }
 
 
+
 /* Brand section */
 
-.brand{
+.brand {
     height: 100vh;
     background-color: var(--ash4);
 }
-.brand .max-width{
+
+.brand .max-width {
     width: 100%;
     max-width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.max-width .bnd{
+
+.max-width .bnd {
     margin-top: 4em;
     width: 100%;
     max-width: 900px;
@@ -380,7 +416,8 @@ main .table {
     display: flex;
     flex-direction: column;
 }
-.bnd .deco{
+
+.bnd .deco {
     background-color: var(--pk);
     position: absolute;
     left: 3%;
@@ -388,9 +425,11 @@ main .table {
     padding: 1em;
     border-radius: 6px;
 }
-.deco i{
+
+.deco i {
     font-size: 1.3rem;
 }
+
 .bnd .header {
     background-color: var(--ash2);
     border: 1px solid var(--ash2);
@@ -406,21 +445,24 @@ main .table {
     font-weight: 400;
     font-size: 1.4rem;
 }
-.bnd .top{
+
+.bnd .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     /* width: 100%; */
 }
-.top .center{
+
+.top .center {
     width: 70%;
     border: 1px solid var(--ash3);
     padding: .5em 1em;
     border-radius: 20px;
     margin-right: 2em;
 }
-.center input{
+
+.center input {
     width: 80%;
     padding: .4em;
     outline: none;
@@ -430,7 +472,8 @@ main .table {
     word-spacing: .2em;
     font-weight: 300;
 }
-.bnd .right a{
+
+.bnd .right a {
     background-color: var(--blu);
     padding: .5em .7em;
     color: var(--w);
@@ -690,7 +733,7 @@ main .table {
     width: 80%;
     margin: 20px auto 0 3em;
 }
-    
+
 .ord .down table {
     min-width: max-content;
     border-collapse: separate;
@@ -992,20 +1035,25 @@ main .table {
 
     /* Aside bar */
 
-     aside {
+    aside {
         position: fixed;
         left: -100%;
     }
+
     /* Main section */
 
     .dashboard {
         height: 140vh;
     }
 
-    .dashboard main{
+    .dashboard main {
         position: absolute;
         top: 12%;
         left: 14%;
+    }
+
+    .display {
+        display: none;
     }
 
     .row {
@@ -1093,11 +1141,12 @@ main .table {
 
     /* Products Page */
 
-    .max-width .pdt{
+    .max-width .pdt {
         position: absolute;
         top: 12%;
         left: 0%;
     }
+
     .pdt .deco {
         background-color: var(--pk);
         position: absolute;
@@ -1269,6 +1318,10 @@ main .table {
         position: absolute;
         top: 12%;
         left: 14%;
+    }
+
+    .display {
+        display: none;
     }
 
     .row {
@@ -1468,9 +1521,10 @@ main .table {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     /* Navigation  */
-    nav .left{
+    nav .left {
         width: 70%;
     }
+
     nav .left .logo {
         display: flex;
     }
@@ -1498,6 +1552,11 @@ main .table {
     .dashboard {
         height: 140vh;
     }
+
+    .display {
+        display: none;
+    }
+
     .row {
         flex-direction: column;
     }
@@ -1630,65 +1689,65 @@ main .table {
         margin: 20px 5px 10px 40px;
     }
 
-        /* Orders Page */
-    
-        .max-width .ord {
-            position: absolute;
-            top: 12%;
-            width: 95%;
-            left: 3%;
-        }
-    
-        .ord .deco {
-            background-color: var(--pk);
-            position: absolute;
-            left: 3%;
-            top: -6%;
-            padding: 1em;
-            border-radius: 6px;
-        }
-    
-        .deco i {
-            font-size: 1.3rem;
-        }
-    
-        .ord .header {
-            display: none;
-        }
-    
-        .ord .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-        }
-    
-        .top .center {
-            display: flex;
-        }
-    
-        .center input {
-            width: 80%;
-            padding: .4em;
-            outline: none;
-            border: none;
-            font-size: 1rem;
-            letter-spacing: .2em;
-            word-spacing: .2em;
-            font-weight: 300;
-        }
-    
-        .ord .right a {
-            font-size: .9rem;
-        }
-    
-        .ord .down {
-            margin-left: 3%;
-        }
-    
-        .ord .down table {
-            margin: 20px 5px 10px 40px;
-        }
+    /* Orders Page */
+
+    .max-width .ord {
+        position: absolute;
+        top: 12%;
+        width: 95%;
+        left: 3%;
+    }
+
+    .ord .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .ord .header {
+        display: none;
+    }
+
+    .ord .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .ord .right a {
+        font-size: .9rem;
+    }
+
+    .ord .down {
+        margin-left: 3%;
+    }
+
+    .ord .down table {
+        margin: 20px 5px 10px 40px;
+    }
 }
 
 
@@ -1696,7 +1755,7 @@ main .table {
 
     /* Aside bar */
 
-    .dashboard aside{
+    .dashboard aside {
         width: 28%;
     }
 
@@ -1705,10 +1764,16 @@ main .table {
     .dashboard {
         height: 100vh;
     }
-    .dashboard main{
+
+    .dashboard main {
         position: absolute;
         left: 20%;
     }
+
+    .display .cust-tbl {
+        display: none;
+    }
+
     .row {
         flex-direction: row;
     }
@@ -1843,63 +1908,63 @@ main .table {
         margin: 20px 5px 10px 40px;
     }
 
-        /* Orders Page */
-    
-        .max-width .ord {
-            position: absolute;
-            top: 12%;
-            width: 73%;
-            left: 24%;
-        }
-    
-        .ord .deco {
-            background-color: var(--pk);
-            position: absolute;
-            left: 3%;
-            top: -6%;
-            padding: 1em;
-            border-radius: 6px;
-        }
-    
-        .deco i {
-            font-size: 1.3rem;
-        }
-    
-        .ord .header {
-            display: none;
-        }
-    
-        .ord .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-        }
-    
-        .top .center {
-            display: flex;
-        }
-    
-        .center input {
-            width: 80%;
-            padding: .4em;
-            outline: none;
-            border: none;
-            font-size: 1rem;
-            letter-spacing: .2em;
-            word-spacing: .2em;
-            font-weight: 300;
-        }
-    
-        .ord .right a {
-            font-size: .9rem;
-        }
-    
-        .ord .down {
-            margin-left: 3%;
-        }
-    
-        .ord .down table {
-            margin: 20px 5px 10px 40px;
-        }
+    /* Orders Page */
+
+    .max-width .ord {
+        position: absolute;
+        top: 12%;
+        width: 73%;
+        left: 24%;
+    }
+
+    .ord .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .ord .header {
+        display: none;
+    }
+
+    .ord .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: flex;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .ord .right a {
+        font-size: .9rem;
+    }
+
+    .ord .down {
+        margin-left: 3%;
+    }
+
+    .ord .down table {
+        margin: 20px 5px 10px 40px;
+    }
 }
