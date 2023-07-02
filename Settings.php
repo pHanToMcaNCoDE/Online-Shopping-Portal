@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Portal || Products</title>
-    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="settings.css">
     <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
@@ -117,7 +117,29 @@
                         <div class="row">
                             <img src="assets/vick.png" alt="">
                             <div class="container">
+                                <h2>ACCOUNT DETAILS</h2>
+                                <div class="details">
+                                    <h1><span>Full Name:</span> Victory Odumeh</h1>
+                                    <p><span>E-mail Address:</span> vodumeh@gmail.com</p>
+                                    <p><span>Sex:</span> Male</p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <h2>ACCOUNT DETAILS</h2>
+                                <div class="details">
+                                    <h1><span>Location:</span> Kano, <span>Nigeria</span></h1>
+                                    <p><span>Tele-Phone:</span> +234 9088877888</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="container">
+                                <h2>ACCOUNT DETAILS</h2>
+                                <div class="details">
+                                    <h1></h1>
+                                    <p>vodumeh@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
