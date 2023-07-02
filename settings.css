@@ -284,8 +284,8 @@ nav .left svg {
     align-items: center;
 }
 .set .view .row img{
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--bl);
