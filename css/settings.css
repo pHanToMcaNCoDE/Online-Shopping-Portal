@@ -42,6 +42,11 @@ body {
     font-family: var(--av), sans-serif;
 }
 
+span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 /********************************************************************
 # Aside Styling 
 *********************************************************************/
@@ -264,11 +269,11 @@ nav .left svg {
 }
 
 .settings .max-width aside {
-    width: 30%;
+    width: 35%;
 }
 
 .settings .max-width .set {
-    width: 70vw;
+    width: 75vw;
     background-color: var(--w);
     position: absolute;
     top: 21%;
@@ -283,8 +288,8 @@ nav .left svg {
 }
 
 .set .view .row img {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--bl);
@@ -292,5 +297,50 @@ nav .left svg {
 
 .view .row .container {
     border: 1px solid var(--ash3);
+    width: 35%;
+    height: 25vh;
+    border-radius: 6px;
+    margin: .5em;
     padding: 1em;
+}
+
+.view .row .container .line {
+    content: '';
+    width: 100%;
+    background-color: var(--ash3);
+}
+
+.view .row .container h2 {
+    border-bottom: 1px solid var(--ash);
+}
+
+.details {
+    padding-top: .4em;
+}
+
+.details h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-top: .3em;
+}
+
+.details p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding-top: .3em;
+    padding-bottom: 1em;
+}
+
+.details a {
+    background-color: var(--blu);
+    border: 1px solid var(--blu);
+    border-radius: 6px;
+    color: var(--w);
+    font-size: 16px;
+    padding: .6em .5em;
+}
+
+.container h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
