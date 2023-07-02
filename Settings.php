@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Portal || Products</title>
-    <link rel="stylesheet" href="settings.css">
+    <title>Shopping Portal || Settings</title>
+    <link rel="stylesheet" href="css/settings.css">
     <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
@@ -137,8 +137,8 @@
                             <div class="container">
                                 <h2>ACCOUNT DETAILS</h2>
                                 <div class="details">
-                                    <h1></h1>
-                                    <p>vodumeh@gmail.com</p>
+                                    <p><span>Business:</span> phantomBrand</p>
+                                    <a href="">Change info <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                                 </div>
                             </div>
                         </div>
