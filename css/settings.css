@@ -234,10 +234,11 @@ nav .left svg {
 
 /* Settings Page */
 
-.settings{
+.settings {
     background-color: var(--ash4);
 }
-.settings .max-width{
+
+.settings .max-width {
     max-width: 900px;
     display: flex;
     justify-content: space-between;
@@ -259,14 +260,14 @@ nav .left svg {
 .settings .header h2 {
     font-weight: 400;
     font-size: 1.4rem;
-    
+
 }
 
-.settings .max-width aside{
+.settings .max-width aside {
     width: 30%;
 }
 
-.settings .max-width .set{
+.settings .max-width .set {
     width: 70vw;
     background-color: var(--w);
     position: absolute;
@@ -275,10 +276,21 @@ nav .left svg {
     padding: 1em;
 }
 
-.set .view .row img{
+.set .view .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set .view .row img {
     width: 30%;
     height: 30%;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--bl);
+}
+
+.view .row .container {
+    border: 1px solid var(--ash3);
+    padding: 1em;
 }
