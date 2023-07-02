@@ -230,16 +230,6 @@
     </section>
 
     <script src="js/script.js"></script>
-    <script src="assets/sweetalert2/sweetalert2.min.js"></script>
-
-    <script>
-    Swal.fire(
-        'Good job!',
-        'You clicked the button!',
-        'success'
-    )
-    </script>
-
 </body>
 
 </html>
