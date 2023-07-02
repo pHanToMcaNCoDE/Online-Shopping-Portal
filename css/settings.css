@@ -344,3 +344,36 @@ nav .left svg {
     font-size: 1.1rem;
     font-weight: 500;
 }
+
+/* Password Pages */
+
+.password{
+    background-color: var(--w);
+    width: 70%;
+    height: 30vh;
+    position: absolute;
+    /* top: 15%; */
+    left: 21%;
+}
+.pwd{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.pwd .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container form{
+    width: 30%;
+}
+
+form .align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+}
