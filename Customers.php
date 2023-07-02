@@ -122,7 +122,7 @@
                     <ul class="aside-down">
                         <li>
                             <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
-                            <a href="#">Settings</a>
+                            <a href="Settings.php">Settings</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>

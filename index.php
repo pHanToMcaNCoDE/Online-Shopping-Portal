@@ -131,7 +131,7 @@
                     <ul class="aside-down">
                         <li>
                             <i class="fa-solid fa-gear"></i>
-                            <a href="#">Settings</a>
+                            <a href="Settings.php">Settings</a>
                         </li>
                         <li>
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>
