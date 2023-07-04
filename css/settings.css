@@ -328,7 +328,6 @@ nav .left svg {
     font-size: 1rem;
     font-weight: 300;
     padding-top: .3em;
-    padding-bottom: 1em;
 }
 
 .details a {
@@ -337,7 +336,7 @@ nav .left svg {
     border-radius: 6px;
     color: var(--w);
     font-size: 16px;
-    padding: .6em .5em;
+    margin: 2em 0;
 }
 
 .container h2 {
@@ -345,35 +344,13 @@ nav .left svg {
     font-weight: 500;
 }
 
-/* Password Pages */
-
-.password{
-    background-color: var(--w);
-    width: 70%;
-    height: 30vh;
-    position: absolute;
-    /* top: 15%; */
-    left: 21%;
-}
-.pwd{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.pwd .container{
+.password .pwd{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.container form{
-    width: 30%;
-}
 
-form .align{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-between; */
+.password .pwd {
+    background-color: var(--w);
 }

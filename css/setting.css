@@ -41,7 +41,8 @@ html {
 body {
     font-family: var(--av), sans-serif;
 }
-span{
+
+span {
     font-weight: 500;
     font-size: 1rem;
 }
@@ -238,10 +239,11 @@ nav .left svg {
 
 /* Settings Page */
 
-.settings{
+.settings {
     background-color: var(--ash4);
 }
-.settings .max-width{
+
+.settings .max-width {
     max-width: 900px;
     display: flex;
     justify-content: space-between;
@@ -266,11 +268,11 @@ nav .left svg {
 
 }
 
-.settings .max-width aside{
+.settings .max-width aside {
     width: 35%;
 }
 
-.settings .max-width .set{
+.settings .max-width .set {
     width: 75vw;
     background-color: var(--w);
     position: absolute;
@@ -278,19 +280,22 @@ nav .left svg {
     left: 20%;
     padding: 1em;
 }
-.set .view .row{
+
+.set .view .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.set .view .row img{
+
+.set .view .row img {
     width: 20%;
     height: 20%;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--bl);
 }
-.view .row .container{
+
+.view .row .container {
     border: 1px solid var(--ash3);
     width: 35%;
     height: 25vh;
@@ -298,28 +303,34 @@ nav .left svg {
     margin: .5em;
     padding: 1em;
 }
-.view .row .container .line{
+
+.view .row .container .line {
     content: '';
     width: 100%;
     background-color: var(--ash3);
 }
-.view .row .container h2{
+
+.view .row .container h2 {
     border-bottom: 1px solid var(--ash);
 }
-.details{
+
+.details {
     padding-top: .4em;
 }
-.details h1{
+
+.details h1 {
     font-size: 1.1rem;
     font-weight: 400;
     padding-top: .3em;
 }
-.details p{
+
+.details p {
     font-size: 1rem;
     font-weight: 300;
     padding-top: .3em;
 }
-.details a{
+
+.details a {
     background-color: var(--blu);
     border: 1px solid var(--blu);
     border-radius: 6px;
@@ -327,15 +338,23 @@ nav .left svg {
     font-size: 16px;
     margin: 2em 0;
 }
-.container h2{
+
+.container h2 {
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.password .pwd .container{
+.password .pwd .txt{
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+}
+.password .pwd .container {
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    width: 20%;
+    height: 30%;
+    border: 1px solid var(--ash3);
     background-color: var(--w);
 }

@@ -198,7 +198,7 @@
                             <?php
                             require("dbConnect.php");
 
-                            $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
+                            // $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
 
                             if($con->connet_error){
                                 die("Cannot connect to the database ".$con->connect_error);
