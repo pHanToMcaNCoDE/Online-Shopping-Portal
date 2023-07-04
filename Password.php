@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Portal || Settings</title>
-    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/setting.css">
     <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
@@ -103,7 +103,7 @@
                         <form class="pwd">
                             <div class="align">
                                 <label>Password:</label>
-                                <input name='pwd' value='1wE324#$'>
+                                <input type='password' name='pwd' value='1wE324#$'>
                             </div>
                         </form>
                     </div>
