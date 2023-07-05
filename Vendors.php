@@ -43,7 +43,7 @@
 
     <section class="vendor">
         <div class="max-width">
-            <aside style="width: 30%; height: 100vh;">
+            <aside style="width: 35%; height: 100vh;">
                 <div class=" x">
                     <svg class="x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -196,30 +196,30 @@
                             <?php
                             require("dbConnect.php");
 
-                            $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
+                            // $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
 
-                            if($con->connet_error){
-                                die("Cannot connect to the database ".$con->connect_error);
-                            }else{
+                            if ($con->connet_error) {
+                                die("Cannot connect to the database " . $con->connect_error);
+                            } else {
                                 $sql = "SELECT * FROM `Brands`;";
 
                                 $result = $con->query($sql);
-                                
 
-                                while($row = $result->fetch_assoc()){
+
+                                while ($row = $result->fetch_assoc()) {
                                     echo "<tr scope='row'> 
-                                            <td>" .$row['Brand_ID']. "</td>
-                                            <td>" .$row['Brand_Name']. "</td>
-                                            <td>" .$row['Brand_Email']. "</td>
-                                            <td>" .$row['Brand_Contact']. "</td>
-                                            <td>" .$row['Brand_Status']. "</td>
-                                            <td>" .$row['Brand_Rating']. "</td>
-                                            <td>" .$row['Brand_Rating']. "</td>
+                                            <td>" . $row['Brand_ID'] . "</td>
+                                            <td>" . $row['Brand_Name'] . "</td>
+                                            <td>" . $row['Brand_Email'] . "</td>
+                                            <td>" . $row['Brand_Contact'] . "</td>
+                                            <td>" . $row['Brand_Status'] . "</td>
+                                            <td>" . $row['Brand_Rating'] . "</td>
+                                            <td>" . $row['Brand_Rating'] . "</td>
                                         </tr>";
                                 }
                             }
 
-                        ?>
+                            ?>
                             <tr>
                                 <td>Yes</td>
                             </tr>
