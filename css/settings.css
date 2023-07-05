@@ -561,12 +561,14 @@ nav .left svg {
     .settings .deco {
         display: none;
     }
-    .set .view .row img {
-        margin-right: 1em;
+
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px){
+    .settings .max-width .set {
+        position: absolute;
+        top: 21%;
+        left: 22%;
     }
-
-    /* .view .row .container{
-        margin-right: 1em;
-    } */
-
 }
