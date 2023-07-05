@@ -328,6 +328,7 @@ nav .left svg {
     font-size: 1rem;
     font-weight: 300;
     padding-top: .3em;
+    padding-bottom: .7em;
 }
 
 .details a {
@@ -336,21 +337,17 @@ nav .left svg {
     border-radius: 6px;
     color: var(--w);
     font-size: 16px;
-    margin: 2em 0;
+}
+
+.details input{
+    margin-bottom: 1.5em;
+    padding: .6em 1em;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
 }
 
 .container h2 {
     font-size: 1.1rem;
     font-weight: 500;
-}
-
-.password .pwd{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.password .pwd {
-    background-color: var(--w);
 }
