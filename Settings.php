@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Portal || Settings</title>
     <link rel="stylesheet" href="css/settings.css">
-    <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
 
@@ -125,7 +124,10 @@
                                 <h2>ACCOUNT DETAILS</h2>
                                 <div class="details">
                                     <p><span>Business:</span> phantomBrand</p>
-                                    <a href="">Change info <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                    <p><span>Password:</span>
+                                        <input disabled type="password" name="pwd" value='@#34Erdft'><br>
+                                        <a href="#" style="padding: .5em;">Change info
+                                            <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                                 </div>
                             </div>
                         </div>
