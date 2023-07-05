@@ -288,6 +288,7 @@ nav .left svg {
 }
 
 .set .view .row img {
+    max-width: 200px;
     width: 20%;
     height: 20%;
     object-fit: cover;
@@ -296,6 +297,7 @@ nav .left svg {
 }
 
 .view .row .container {
+    max-width: 450px;
     border: 1px solid var(--ash3);
     width: 35%;
     height: 25vh;
@@ -345,9 +347,226 @@ nav .left svg {
     border-radius: 20px;
     border: none;
     background-color: transparent;
+    color: var(--bl);
 }
 
 .container h2 {
     font-size: 1.1rem;
     font-weight: 500;
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+
+    /* Navigation  */
+
+    nav .left .logo {
+        display: none;
+    }
+
+    nav .left svg {
+        display: flex;
+        width: 15%;
+    }
+
+    nav .right {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    /* Aside bar */
+
+    aside {
+        position: fixed;
+        left: -100%;
+    }
+
+    /* Settings Page */
+
+    .settings .max-width .set {
+        position: absolute;
+        top: 15%;
+        left: 13%;
+        padding: 1em;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .view .row {
+        flex-direction: column;
+    }
+
+    .view .row .container{
+        width: 100%;
+        height: 30%;
+    }
+
+    .set .view .row img {
+        width: 50%;
+        height: 50%;
+    }
+    .set .view .txt{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .settings .header {
+       display: none;
+       padding-bottom: .5em;
+    }
+
+    .settings .deco{
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    /* Navigation  */
+
+    nav .left .logo {
+        display: none;
+    }
+
+    nav .left svg {
+        display: flex;
+        width: 15%;
+    }
+
+    nav .right {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    /* Aside bar */
+
+    aside {
+        position: fixed;
+        left: -100%;
+    }
+
+    /* Settings Page */
+
+    .settings .max-width .set {
+        position: absolute;
+        top: 15%;
+        left: 13%;
+        padding: 1em;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .view .row {
+        flex-direction: column;
+    }
+
+    .view .row .container {
+        width: 100%;
+        height: 30%;
+    }
+
+    .set .view .row img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .set .view .txt {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .settings .header {
+        display: none;
+        padding-bottom: .5em;
+    }
+
+    .settings .deco {
+        display: none;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Navigation  */
+
+    nav .left .logo {
+        display: none;
+    }
+
+    nav .left svg {
+        display: flex;
+        width: 15%;
+    }
+
+    nav .right {
+        width: 85%;
+        font-size: 1rem;
+    }
+
+    /* Aside bar */
+
+    aside {
+        position: fixed;
+        left: -100%;
+    }
+
+    /* Settings Page */
+
+    .settings .max-width .set {
+        position: absolute;
+        top: 21%;
+        left: 15%;
+        padding: 1em;
+    }
+
+    .display {
+        display: none;
+    }
+
+    /* .view .row {
+        flex-direction: row;
+    } */
+
+    .view .row .container {
+        width: 100%;
+        /* height: 30%; */
+    }
+
+    .set .view .row img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .set .view .txt {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .settings .header {
+        display: none;
+        padding-bottom: .5em;
+    }
+
+    .settings .deco {
+        display: none;
+    }
+    .set .view .row img {
+        margin-right: 1em;
+    }
+
+    /* .view .row .container{
+        margin-right: 1em;
+    } */
+
 }
