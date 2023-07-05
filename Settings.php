@@ -54,10 +54,6 @@
                             <a href="Settings.php">Account</a>
                         </li>
                         <li>
-                            <i class="fa-solid fa-key"></i>
-                            <a href="Password.php">Password</a>
-                        </li>
-                        <li>
                             <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-grid">
@@ -127,7 +123,8 @@
                                     <p><span>Password:</span>
                                         <input disabled type="password" name="pwd" value='@#34Erdft'><br>
                                         <a href="#" style="padding: .5em;">Change info
-                                            <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                            <i class="fa-solid fa-arrow-right-long fa-beat"></i>
+                                        </a>
                                 </div>
                             </div>
                         </div>
