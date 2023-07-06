@@ -29,10 +29,6 @@
                 </svg>
             </div>
             <div class="right">
-                <!-- <li>
-                    <a href="#"><i class="fa-solid fa-bell fa-shake"></i></a>
-                    <div class="num">1</div>
-                </li -->
                 <div class="user">
                     <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
                     <a href="#" style="margin-left: .3em; color: var(--bl);">Sign-out</a>
