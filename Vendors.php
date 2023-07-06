@@ -35,7 +35,7 @@
                 </li> -->
                 <div class="user">
                     <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
-                    <a href="#">Sign-out</a>
+                    <a href="#" style="margin-left: .3em; color: var(--bl);">Sign-out</a>
                 </div>
             </div>
         </nav>
@@ -120,7 +120,7 @@
                         </li>
                     </ul>
                     <ul class="aside-down">
-                        <li class="current">
+                        <li>
                             <i class="fa-solid fa-user"></i>
                             <a href="Account.php">Account</a>
                         </li>
