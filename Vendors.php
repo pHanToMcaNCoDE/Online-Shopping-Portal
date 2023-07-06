@@ -34,8 +34,8 @@
                     <div class="num">1</div>
                 </li> -->
                 <div class="user">
-                    <img src="assets/vick.png" alt="username">
-                    <p>Victory Odumeh</p>
+                    <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
+                    <a href="#">Sign-out</a>
                 </div>
             </div>
         </nav>
@@ -120,13 +120,9 @@
                         </li>
                     </ul>
                     <ul class="aside-down">
-                        <li>
-                            <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
-                            <a href="Settings.php">Settings</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
-                            <a href="#">Sign-out</a>
+                        <li class="current">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="Account.php">Account</a>
                         </li>
                     </ul>
                 </div>
