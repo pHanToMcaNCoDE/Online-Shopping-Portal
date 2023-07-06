@@ -171,7 +171,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Orders.php">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -195,7 +195,8 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Products.php">view more
+                                    <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +219,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Vendors.php">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -241,7 +242,8 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Customers.php">view more <i
+                                        class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -263,7 +265,7 @@
                         </div>
                         <div class="bottom">
                             <div class="box-link">
-                                <a href="#">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Brands.php">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </div>
                     </div>
@@ -329,7 +331,7 @@
                                 </td>
                             </tr>
                             <div class="box-link">
-                                <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                <a href="Orders.php">view more <i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                             </div>
                         </table>
                     </div>
@@ -393,7 +395,8 @@
                                         <td>Female</td>
                                     </tr>
                                     <div class="box-link">
-                                        <a href="#">view more<i class="fa-solid fa-arrow-right-long fa-beat"></i></a>
+                                        <a href="Customers.php">view more <i
+                                                class="fa-solid fa-arrow-right-long fa-beat"></i></a>
                                     </div>
                                 </table>
                             </div>
