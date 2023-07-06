@@ -237,7 +237,7 @@ nav .left svg {
 *********************************************************************/
 
 .dashboard {
-    height: 100vh;
+    height: 110vh;
     background-color: var(--ash4);
 }
 
@@ -343,7 +343,7 @@ main .header {
 }
 
 .cust-tbl {
-    margin-top: -20%;
+    margin-top: -22.5%;
 }
 
 .conta {
