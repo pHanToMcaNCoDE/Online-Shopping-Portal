@@ -34,8 +34,8 @@
                     <div class="num">1</div>
                 </li> -->
                 <div class="user">
-                    <img src="assets/vick.png" alt="username">
-                    <p>Victory Odumeh</p>
+                    <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
+                    <a href="#">Sign-out</a>
                 </div>
             </div>
         </nav>
@@ -87,7 +87,7 @@
                             </svg>
                             <a href="Products.php">Products</a>
                         </li>
-                        <li class="current">
+                        <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-truck">
@@ -107,7 +107,7 @@
                             </svg>
                             <a href="Customers.php">Customers</a>
                         </li>
-                        <li>
+                        <li class="current">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-users">
@@ -120,13 +120,9 @@
                         </li>
                     </ul>
                     <ul class="aside-down">
-                        <li>
-                            <i class="fa-solid fa-gear fa-spin fa-spin-reverse"></i>
-                            <a href="Settings.php">Settings</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-arrow-right-from-bracket fa-flip"></i>
-                            <a href="#">Sign-out</a>
+                        <li class="current">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="Account.php">Account</a>
                         </li>
                     </ul>
                 </div>
@@ -196,30 +192,30 @@
                             <?php
                             require("dbConnect.php");
 
-                            $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
+                            // $con = new mysql(SERVER, USERNAME, PASSWORD, DATABASE);
 
-                            if($con->connet_error){
-                                die("Cannot connect to the database ".$con->connect_error);
-                            }else{
+                            if ($con->connet_error) {
+                                die("Cannot connect to the database " . $con->connect_error);
+                            } else {
                                 $sql = "SELECT * FROM `Brands`;";
 
                                 $result = $con->query($sql);
-                                
 
-                                while($row = $result->fetch_assoc()){
+
+                                while ($row = $result->fetch_assoc()) {
                                     echo "<tr scope='row'> 
-                                            <td>" .$row['Brand_ID']. "</td>
-                                            <td>" .$row['Brand_Name']. "</td>
-                                            <td>" .$row['Brand_Email']. "</td>
-                                            <td>" .$row['Brand_Contact']. "</td>
-                                            <td>" .$row['Brand_Status']. "</td>
-                                            <td>" .$row['Brand_Rating']. "</td>
-                                            <td>" .$row['Brand_Rating']. "</td>
+                                            <td>" . $row['Brand_ID'] . "</td>
+                                            <td>" . $row['Brand_Name'] . "</td>
+                                            <td>" . $row['Brand_Email'] . "</td>
+                                            <td>" . $row['Brand_Contact'] . "</td>
+                                            <td>" . $row['Brand_Status'] . "</td>
+                                            <td>" . $row['Brand_Rating'] . "</td>
+                                            <td>" . $row['Brand_Rating'] . "</td>
                                         </tr>";
                                 }
                             }
 
-                        ?>
+                            ?>
                             <tr>
                                 <td>Yes</td>
                             </tr>
