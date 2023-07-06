@@ -54,7 +54,7 @@
         <div class="max-width">
             <aside style="width: 24.2%; height: 100vh;">
                 <div class=" x">
-                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                    <svg class="x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                         stroke-linejoin="round" class="feather feather-x">
                         <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -63,8 +63,8 @@
                 </div>
                 <div class="content">
                     <ul class="aside-up">
-                        <li class="current">
-                            <svg xmlns=" http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                        <li>
+                            <svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-grid">
                                 <rect x="3" y="3" width="7" height="7"></rect>
@@ -75,7 +75,7 @@
                             <a href="index.php">Dashboard</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-star">
                                 <polygon
@@ -85,7 +85,7 @@
                             <a href="Brands.php">Brands</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-gift">
                                 <polyline points="20 12 20 22 4 22 4 12"></polyline>
@@ -97,7 +97,7 @@
                             <a href="Products.php">Products</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-truck">
                                 <rect x="1" y="3" width="15" height="13"></rect>
@@ -108,7 +108,7 @@
                             <a href="Orders.php">Orders</a>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-user">
                                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -116,8 +116,8 @@
                             </svg>
                             <a href="Customers.php">Customers</a>
                         </li>
-                        <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                        <li class="current">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-users">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -129,13 +129,9 @@
                         </li>
                     </ul>
                     <ul class="aside-down">
-                        <li>
-                            <i class="fa-solid fa-gear"></i>
-                            <a href="Settings.php">Settings</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                            <a href="#">Sign-out</a>
+                        <li class="current">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="Account.php">Account</a>
                         </li>
                     </ul>
                 </div>
