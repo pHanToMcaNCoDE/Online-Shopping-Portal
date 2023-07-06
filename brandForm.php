@@ -1,10 +1,3 @@
-<?php
-
-// require('nav.php');
-// require('aside.php');
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,16 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Portal - Add Brands</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
-    <!-- <script src="sweetalert2/jquery-3.6.4.min.js"></script>
-    <script src="sweetalert2/sweetalert2.all.min.js"></script> -->
 </head>
 
 <body>
-
-
     <section class="bForm">
         <div class="header">
             <h2>Add Brands</h2>
@@ -50,7 +38,6 @@
                         <label for="contact">Contact Info:</label>
                         <input type="text" name="bContact" id="bContact" placeholder="e.g; +1 (23) 000-000">
                     </div>
-
                     <div class="items">
                         <label for="status">Status:</label>
                         <select name="bStatus" id="status">
@@ -85,7 +72,7 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <input class="submit" type="submit" value="Add Brand" style="cursor: pointer;">
+                    <input class="submit" type="submit" value="Add Brand" style="cursor: pointer">
                 </div>
             </div>
         </form>
