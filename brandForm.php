@@ -124,7 +124,6 @@
                 </div>
             </aside>
             <main class="brandForm" role="main">
-
                 <div class="deco">
                     <i class="fa-solid fa-clipboard"></i>
                 </div>
@@ -147,7 +146,6 @@
                         <h2>Registered Vendors</h2>
                         <p>tracking progress</p>
                     </div>
-
                 </div>
                 <div class="down">
                     <form class="bForm" action="" method="">
