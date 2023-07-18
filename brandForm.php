@@ -148,7 +148,7 @@
                     </div>
                 </div>
                 <div class="down">
-                    <form class="bForm" action="" method="" style=" position: absolute; top: 20%;">
+                    <form class="bForm" action="" method="" style=" position: absolute; top: 23%; left: 30%;">
                         <div class=" content">
                             <div class="item">
                                 <label for="brandID">Brand ID:</label>
