@@ -123,7 +123,7 @@
                     </ul>
                 </div>
             </aside>
-            <main class="brandForm" role="main">
+            <main class="ven" role="main">
                 <div class="deco">
                     <i class="fa-solid fa-clipboard"></i>
                 </div>
@@ -141,7 +141,7 @@
                         </a>/ Vendors
                     </h2>
                 </div>
-                <div class="top">
+                <div class="top" style="text-align: center;">
                     <div class="left">
                         <h2>Registered Vendors</h2>
                         <p>tracking progress</p>
@@ -178,6 +178,10 @@
                                 <label for="rating">Rating:</label>
                                 <input class="" type="text" placeholder="">
                             </div>
+                        </div>
+
+                        <div class="brand-btn">
+                            <input type="submit" value="Add Brand">
                         </div>
                     </form>
                 </div>
