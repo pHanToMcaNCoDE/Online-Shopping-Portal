@@ -1009,13 +1009,14 @@ main .header {
     padding: 1%;
 }
 
+/* Brand form */
 
-.form-brand {
+.brand-form-page {
     height: 100vh;
     background-color: var(--ash4);
 }
 
-.form-brand .max-width {
+.brand-form-page .max-width {
     width: 100%;
     max-width: 620px;
     display: flex;
@@ -1023,7 +1024,20 @@ main .header {
     align-items: center;
 }
 
-.form-brand .deco {
+.max-width .brandForm {
+    margin-top: 4em;
+    width: 70vw;
+    max-width: 400px;
+    background-color: var(--w);
+    border-radius: 6px;
+    position: absolute;
+    left: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.brandForm .deco {
     background-color: var(--pk);
     position: absolute;
     left: 3%;
@@ -1036,17 +1050,66 @@ main .header {
     font-size: 1.3rem;
 }
 
-.form-brand .brandForm{
-    width: 75vw;
-    background-color: var(--w);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.brandForm .header {
+    background-color: var(--ash2);
+    border: 1px solid var(--ash2);
+    padding: .3em;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     position: absolute;
-    top: 12%;
-    left: 25%;
+    top: -17.6%;
+    width: 100%;
 }
 
+.header h2 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.brandForm .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    /* width: 100%; */
+}
+
+/* .top .center {
+    width: 70%;
+    border: 1px solid var(--ash3);
+    padding: .5em 1em;
+    border-radius: 20px;
+    margin-right: 2em;
+} */
+
+.center input {
+    width: 80%;
+    padding: .4em;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    letter-spacing: .2em;
+    word-spacing: .2em;
+    font-weight: 300;
+}
+
+.brandForm .right a {
+    background-color: var(--blu);
+    padding: .5em .7em;
+    color: var(--w);
+    border-radius: 6px;
+}
+
+.brandForm .down {
+    max-height: 580px;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 20px auto 0 3em;
+}
+
+.brandForm .down .bForm {
+    width: 30%;
+}
 
 
 
