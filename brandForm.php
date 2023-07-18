@@ -61,7 +61,7 @@
                             </svg>
                             <a href="index.php">Dashboard</a>
                         </li>
-                        <li>
+                        <li class="current">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-star">
@@ -103,7 +103,7 @@
                             </svg>
                             <a href="Customers.php">Customers</a>
                         </li>
-                        <li class="current">
+                        <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-users">
@@ -153,31 +153,31 @@
                     <form class="bForm" action="" method="">
                         <div class="content">
                             <div class="item">
-                                <label for=""></label>
+                                <label for="brandID">Brand ID:</label>
                                 <input class="" type="text" placeholder="">
                             </div>
                             <div class="item">
-                                <label for=""></label>
-                                <input class="" type="text" placeholder="">
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="item">
-                                <label for=""></label>
-                                <input class="" type="text" placeholder="">
-                            </div>
-                            <div class="item">
-                                <label for=""></label>
+                                <label for="brandName">Brand Name:</label>
                                 <input class="" type="text" placeholder="">
                             </div>
                         </div>
                         <div class="content">
                             <div class="item">
-                                <label for=""></label>
+                                <label for="emailAddress">E-mail Address:</label>
                                 <input class="" type="text" placeholder="">
                             </div>
                             <div class="item">
-                                <label for=""></label>
+                                <label for="contact">Contact:</label>
+                                <input class="" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="item">
+                                <label for="status">Status:</label>
+                                <input class="" type="text" placeholder="">
+                            </div>
+                            <div class="item">
+                                <label for="rating">Rating:</label>
                                 <input class="" type="text" placeholder="">
                             </div>
                         </div>
