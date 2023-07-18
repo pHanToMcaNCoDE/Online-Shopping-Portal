@@ -141,15 +141,15 @@
                         </a>/ Vendors
                     </h2>
                 </div>
-                <div class="top" style="text-align: center;">
+                <div class="top" style="text-align: center; position: absolute; left: 40%;">
                     <div class="left">
                         <h2>Registered Vendors</h2>
                         <p>tracking progress</p>
                     </div>
                 </div>
                 <div class="down">
-                    <form class="bForm" action="" method="">
-                        <div class="content">
+                    <form class="bForm" action="" method="" style=" position: absolute; top: 20%;">
+                        <div class=" content">
                             <div class="item">
                                 <label for="brandID">Brand ID:</label>
                                 <input class="" type="text" placeholder="">
