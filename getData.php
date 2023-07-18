@@ -29,7 +29,7 @@ class Brands{
 
             $sql->bind_param("ssssss", $bID, $bName, $bEmail, $contact, $status, $rating);
 
-            $sql->execute();
+            $sql->execute(); 
 
     
             return true;
