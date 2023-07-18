@@ -1025,7 +1025,7 @@ main .header {
 }
 .max-width .brandForm {
     margin-top: 4em;
-    width: 100%;
+    width: 70%;
     max-width: 900px;
     background-color: var(--w);
     border-radius: 6px;
@@ -1076,10 +1076,7 @@ main .header {
 }
 
 .brandForm .down .bForm {
-    width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 60%;
+    width: 100%;
     border: 1px solid var(--ash3);
 }
 .bForm .content{
@@ -1091,7 +1088,7 @@ main .header {
 .bForm .content .item{
     display: flex;
     flex-direction: column;
-    margin: .6em;
+    margin: .9em;
 }
 
 .bForm .content .item label{
