@@ -1025,8 +1025,8 @@ main .header {
 }
 
 .max-width .brandForm {
+    width: 70vw;
     margin-top: 4em;
-    width: 70%;
     max-width: 400px;
     background-color: var(--w);
     border-radius: 6px;
@@ -1074,14 +1074,6 @@ main .header {
     /* width: 100%; */
 }
 
-/* .top .center {
-    width: 70%;
-    border: 1px solid var(--ash3);
-    padding: .5em 1em;
-    border-radius: 20px;
-    margin-right: 2em;
-} */
-
 .center input {
     width: 80%;
     padding: .4em;
@@ -1100,16 +1092,34 @@ main .header {
     border-radius: 6px;
 }
 
-.brandForm .down {
-    max-height: 580px;
-    overflow-y: scroll;
-    width: 80%;
-    margin: 20px auto 0 3em;
-}
 
 .brandForm .down .bForm {
-    width: 30%;
+    width: 100%;
 }
+.bForm .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bForm .content .item{
+    display: flex;
+    flex-direction: column;
+    margin: .2em;
+}
+
+.bForm .content .item label{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.bForm .content .item input{
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid var(--ash3);
+    outline: none;
+}
+
+
 
 
 
