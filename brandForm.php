@@ -140,9 +140,10 @@
                         </a>/ Add brands
                     </h2>
                 </div>
-                <div class="top" style="font-size: 1.2rem; text-align: center; position: absolute; left: 45%;">
+                <div class="top" style="font-size: 1.2rem; text-align: center; position: absolute; left: 15%;">
                     <div class="left">
                         <h2>Add Brands</h2>
+                        <p>for strong partnerships</p>
                     </div>
                 </div>
                 <div class="down">
@@ -150,31 +151,42 @@
                         <div class=" content">
                             <div class="item">
                                 <label for="brandID">Brand ID:</label>
-                                <input class="" type="text" placeholder="">
+                                <input class="" type="text" placeholder="e.g; B/01" name="bID">
                             </div>
                             <div class="item">
                                 <label for="brandName">Brand Name:</label>
-                                <input class="" type="text" placeholder="">
+                                <input class="" type="text" placeholder="e.g; Nokia" name="bName">
                             </div>
                         </div>
                         <div class="content">
                             <div class="item">
                                 <label for="emailAddress">E-mail Address:</label>
-                                <input class="" type="text" placeholder="">
+                                <input class="" type="text" placeholder="e.g support@nokia.io" name="email">
                             </div>
                             <div class="item">
                                 <label for="contact">Contact:</label>
-                                <input class="" type="text" placeholder="">
+                                <input class="" type="text" placeholder="+2334578690" name="phone">
                             </div>
                         </div>
                         <div class="content">
                             <div class="item">
                                 <label for="status">Status:</label>
-                                <input class="" type="text" placeholder="">
+                                <select class="status" name="status">
+                                    <option disabled selected>--- select status ---</option>
+                                    <option value="1 star">Available</option>
+                                    <option value="2 star">Not available</option>
+                                </select>
                             </div>
                             <div class="item">
                                 <label for="rating">Rating:</label>
-                                <input class="" type="text" placeholder="">
+                                <select class="rating" name="rating">
+                                    <option disabled selected>--- select rating ---</option>
+                                    <option value="1 star">1 star</option>
+                                    <option value="2 star">2 star</option>
+                                    <option value="3 star">3 star</option>
+                                    <option value="4 star">4 star</option>
+                                    <option value="5 star">5 star</option>
+                                </select>
                             </div>
                         </div>
 
