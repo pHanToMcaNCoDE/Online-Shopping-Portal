@@ -1402,13 +1402,17 @@ main .header {
     }
 
     /* Brand Form page */
-
+    .brand-form-page{
+        height: 120vh;
+    }
     .max-width .bnd {
         position: absolute;
-        left: 0%;
-        width: 100%;
+        left: 3%;
+        height: 100vh;
+        width: 90%;
     }
     .bnd .down .bForm {
+        /* margin-right: 1em; */
         width: 60%;
         border: 1px solid var(--ash3);
         padding: .5em;
