@@ -1070,6 +1070,8 @@ main .header {
     align-items: center;
     padding: 1em;
     width: 100%;
+    position: absolute;
+    left: 15%;
 }
 
 .bnd .down .bForm {
@@ -1406,16 +1408,19 @@ main .header {
         height: 120vh;
     }
     .max-width .bnd {
+        height: 100vh;
+        width: 93%;
         position: absolute;
         left: 3%;
-        height: 100vh;
-        width: 90%;
     }
     .bnd .down .bForm {
         /* margin-right: 1em; */
         width: 60%;
         border: 1px solid var(--ash3);
         padding: .5em;
+        margin-top: 0%;
+        position: absolute;
+        right: 3%;
     }
 
     .bForm .content {
@@ -1424,6 +1429,27 @@ main .header {
         justify-content: space-between;
         align-items: center;
     }
+
+        /* .brand-form-page .max-width {
+            width: 100%;
+            max-width: 620px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .max-width .bnd {
+            margin-top: 4em;
+            width: 100%;
+            max-width: 900px;
+            background-color: var(--w);
+            border-radius: 6px;
+            position: absolute;
+            left: 20%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+        } */
 }
 
 

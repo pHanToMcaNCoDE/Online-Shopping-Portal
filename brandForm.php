@@ -140,7 +140,7 @@
                         </a>/ Add brands
                     </h2>
                 </div>
-                <div class="top" style="font-size: 1.2rem; text-align: center; position: absolute; left: 15%;">
+                <div class="top" style="font-size: 1.2rem; text-align: center;">
                     <div class="left">
                         <h2>Add Brands</h2>
                         <p>for strong partnerships</p>
