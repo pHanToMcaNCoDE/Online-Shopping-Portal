@@ -123,7 +123,7 @@
                     </ul>
                 </div>
             </aside>
-            <main class="ven" role="main">
+            <main class="bnd" role="main">
                 <div class="deco">
                     <i class="fa-solid fa-clipboard"></i>
                 </div>
@@ -143,7 +143,6 @@
                 <div class="top" style="font-size: 1.2rem; text-align: center; position: absolute; left: 45%;">
                     <div class="left">
                         <h2>Add Brands</h2>
-                        <!-- <p>tracking progress</p> -->
                     </div>
                 </div>
                 <div class="down">
