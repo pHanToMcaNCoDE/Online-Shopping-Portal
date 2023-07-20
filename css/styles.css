@@ -1976,7 +1976,7 @@ main .header {
         position: absolute;
         top: 12%;
         left: 0%;
-        height: 120vh;
+        /* height: 120vh; */
         width: 100%;
     }
 
@@ -2379,6 +2379,8 @@ main .header {
     .cus .down table {
         margin: 20px 5px 10px 40px;
     }
+
+    
     /* brandForm Page */
 
 
@@ -2386,7 +2388,7 @@ main .header {
         position: absolute;
         top: 12%;
         left: 0%;
-        height: 120vh;
+        /* height: 120vh; */
         width: 100%;
     }
 
