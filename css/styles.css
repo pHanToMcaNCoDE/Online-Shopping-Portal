@@ -1009,20 +1009,21 @@ main .header {
 }
 
 /* Brand form */
-/* 
-.brand-form-page{
+
+
+.brand-Form{
     height: 100vh;
     background-color: var(--ash4);
 }
 
-.brand-form-page .max-width {
+.brand-Form .max-width {
     width: 100%;
     max-width: 620px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.max-width .bnd {
+.max-width .brndForm {
     margin-top: 4em;
     width: 100%;
     max-width: 900px;
@@ -1035,7 +1036,7 @@ main .header {
     flex-direction: column;
 }
 
-.bnd .deco {
+.brndForm .deco {
     background-color: var(--pk);
     position: absolute;
     left: 3%;
@@ -1048,7 +1049,7 @@ main .header {
     font-size: 1.3rem;
 }
 
-.bnd .header {
+.brndForm .header {
     background-color: var(--ash2);
     border: 1px solid var(--ash2);
     padding: .3em;
@@ -1064,7 +1065,7 @@ main .header {
     font-size: 1.4rem;
 }
 
-.bnd .top {
+.brndForm .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1074,9 +1075,13 @@ main .header {
     left: 15%;
 }
 
-.bnd .down .bForm {
-    width: 50%;
+.brndForm .down .bForm {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
     border: 1px solid var(--ash3);
+    padding: .3em;
 }
 
 .bForm .content{
@@ -1098,7 +1103,7 @@ main .header {
 }
 .bForm .content .item input{
     width: 100%;
-    padding: .4em;
+    padding: .7em .6em;
     outline: none;
     border: 1px solid var(--bl);
     font-size: .9rem;
@@ -1109,7 +1114,7 @@ main .header {
 }
 .bForm .content .item select {
     width: 100%;
-    padding: .4em;
+    padding: .7em .6em;
     outline: none;
     border: 1px solid var(--bl);
     font-size: .9rem;
@@ -1121,7 +1126,7 @@ main .header {
 .bForm .brand-btn input{
     background-color: var(--blu);
     padding: .7em 1.2em;
-    border-radius: 6px;
+    border-radius: 5px;
     outline: none;
     border: 1px solid var(--blu);
     color: var(--w);
@@ -1129,67 +1134,14 @@ main .header {
     margin: .8em 0 .5em .8em;
     cursor: pointer;
     font-size: 1rem;
-} */
-
-
-
-
-
-/* Brand Form page */
-/* .brand-form-page {
-    height: 120vh;
 }
 
-.max-width .bnd {
-    height: 100vh;
-    width: 93%;
-    position: absolute;
-    left: 3%;
-}
-
-.bnd .down .bForm {
-    width: 60%;
-    border: 1px solid var(--ash3);
-    padding: .5em;
-    margin-top: 0%;
-    position: absolute;
-    right: 3%;
-}
-
-.bForm .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-} */
-
-/* .brand-form-page .max-width {
-            width: 100%;
-            max-width: 620px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-    
-        .max-width .bnd {
-            margin-top: 4em;
-            width: 100%;
-            max-width: 900px;
-            background-color: var(--w);
-            border-radius: 6px;
-            position: absolute;
-            left: 20%;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-        } */
 
 
 
-
-
-
-/* Responsive Design */
+/******************************************************** 
+# Responsive Design 
+*********************************************************/
 
 @media only screen and (min-width: 270px) and (max-width: 480px) {
 
@@ -1601,6 +1553,39 @@ main .header {
     .ven .down table {
         margin: 20px 5px 10px 40px;
     }
+
+    /* brandForm Page */
+
+
+    .max-width .brndForm {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+        height: 120vh;
+        width: 100%;
+    }
+    .bForm{
+        height: 90vh;
+        margin-top: 0em;
+    }
+    .bForm .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brndForm .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 8%;
+        top: -3%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .brndForm .top {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 
@@ -1982,11 +1967,47 @@ main .header {
     .ven .down table {
         margin: 20px 5px 10px 40px;
     }
+
+
+    /* brandForm Page */
+
+
+    .max-width .brndForm {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+        height: 120vh;
+        width: 100%;
+    }
+
+    .bForm {
+        margin-top: 0em;
+    }
+
+    .bForm .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .brndForm .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 8%;
+        top: -3%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .brndForm .top {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
     /* Navigation  */
+
     nav .left {
         width: 70%;
     }
@@ -2288,76 +2309,109 @@ main .header {
     }
 
 
-        /* Customers Page */
-    
-        .max-width .cus {
-            position: absolute;
-            top: 12%;
-            left: 0%;
-        }
-    
-        .cus .deco {
-            background-color: var(--pk);
-            position: absolute;
-            left: 3%;
-            top: -6%;
-            padding: 1em;
-            border-radius: 6px;
-        }
-    
-        .deco i {
-            font-size: 1.3rem;
-        }
-    
-        .cus .header {
-            background-color: var(--ash2);
-            border: 1px solid var(--ash2);
-            padding: .3em;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            position: absolute;
-            top: -17.6%;
-            width: 100%;
-        }
-    
-        .header h2 {
-            font-weight: 400;
-            font-size: 1.4rem;
-        }
-    
-        .cus .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-        }
-    
-        .top .center {
-            display: none;
-        }
-    
-        .center input {
-            width: 80%;
-            padding: .4em;
-            outline: none;
-            border: none;
-            font-size: 1rem;
-            letter-spacing: .2em;
-            word-spacing: .2em;
-            font-weight: 300;
-        }
-    
-        .cus .right a {
-            font-size: .9rem;
-        }
-    
-        .cus .down {
-            margin-left: 3%;
-        }
-    
-        .cus .down table {
-            margin: 20px 5px 10px 40px;
-        }
+    /* Customers Page */
+
+    .max-width .cus {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+    }
+
+    .cus .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .cus .header {
+        background-color: var(--ash2);
+        border: 1px solid var(--ash2);
+        padding: .3em;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        position: absolute;
+        top: -17.6%;
+        width: 100%;
+    }
+
+    .header h2 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .cus .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .cus .right a {
+        font-size: .9rem;
+    }
+
+    .cus .down {
+        margin-left: 3%;
+    }
+
+    .cus .down table {
+        margin: 20px 5px 10px 40px;
+    }
+    /* brandForm Page */
+
+
+    .max-width .brndForm {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+        height: 120vh;
+        width: 100%;
+    }
+
+    .bForm {
+        margin-top: 0em;
+    }
+
+    .bForm .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .brndForm .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 8%;
+        top: -3%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .brndForm .top {
+        width: 80%;
+        text-align: center;
+    }
 }
 
 
@@ -2651,74 +2705,108 @@ main .header {
     }
 
 
-        /* Customers Page */
-    
-        .max-width .cus {
-            position: absolute;
-            top: 12%;
-            left: 0%;
-        }
-    
-        .cus .deco {
-            background-color: var(--pk);
-            position: absolute;
-            left: 3%;
-            top: -6%;
-            padding: 1em;
-            border-radius: 6px;
-        }
-    
-        .deco i {
-            font-size: 1.3rem;
-        }
-    
-        .cus .header {
-            background-color: var(--ash2);
-            border: 1px solid var(--ash2);
-            padding: .3em;
-            border-bottom-left-radius: 6px;
-            border-bottom-right-radius: 6px;
-            position: absolute;
-            top: -17.6%;
-            width: 100%;
-        }
-    
-        .header h2 {
-            font-weight: 400;
-            font-size: 1.4rem;
-        }
-    
-        .cus .top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1em;
-        }
-    
-        .top .center {
-            display: none;
-        }
-    
-        .center input {
-            width: 80%;
-            padding: .4em;
-            outline: none;
-            border: none;
-            font-size: 1rem;
-            letter-spacing: .2em;
-            word-spacing: .2em;
-            font-weight: 300;
-        }
-    
-        .cus .right a {
-            font-size: .9rem;
-        }
-    
-        .cus .down {
-            margin-left: 3%;
-        }
-    
-        .cus .down table {
-            margin: 20px 5px 10px 40px;
-        }
+    /* Customers Page */
+
+    .max-width .cus {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+    }
+
+    .cus .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 3%;
+        top: -6%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .deco i {
+        font-size: 1.3rem;
+    }
+
+    .cus .header {
+        background-color: var(--ash2);
+        border: 1px solid var(--ash2);
+        padding: .3em;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        position: absolute;
+        top: -17.6%;
+        width: 100%;
+    }
+
+    .header h2 {
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    .cus .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .top .center {
+        display: none;
+    }
+
+    .center input {
+        width: 80%;
+        padding: .4em;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        letter-spacing: .2em;
+        word-spacing: .2em;
+        font-weight: 300;
+    }
+
+    .cus .right a {
+        font-size: .9rem;
+    }
+
+    .cus .down {
+        margin-left: 3%;
+    }
+
+    .cus .down table {
+        margin: 20px 5px 10px 40px;
+    }
+
+    /* brandForm Page */
+
+
+    .max-width .brndForm {
+        position: absolute;
+        top: 12%;
+        left: 0%;
+        height: 120vh;
+        width: 100%;
+    }
+
+    .bForm {
+        margin-top: 0em;
+    }
+
+    .bForm .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .brndForm .deco {
+        background-color: var(--pk);
+        position: absolute;
+        left: 8%;
+        top: -3%;
+        padding: 1em;
+        border-radius: 6px;
+    }
+
+    .brndForm .top {
+        width: 80%;
+        text-align: center;
+    }
 }
