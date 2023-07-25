@@ -1,3 +1,57 @@
+<?php
+
+    if($_POST['addBrand']){
+        $bID = $_POST['bID'];
+        $bName = $_POST['bName'];
+        $email = $_POST['email'];
+        $contact = $_POST['contact'];
+        $status = $_POST['status'];
+        $rating = $_POST['rating'];
+
+        require "dbConnect.php";
+
+        $con = new mysqli(SERVER, USERNAME, PASSWORD, DATABASE);
+
+        if(!$con){
+            die("Cannot connect to the database ".$con->connect_error);
+        }else{
+            $sql = "INSERT INTO `Brands`(`BrandID`, `BrandName`, `BrandEmailAddress`, `BrandContact`, `BrandStatus`, `BrandRating`) VALUES('".$bID."','".$bName."','".$email."', '".$contact."', '".$status."','".$rating."')";
+
+            if(empty($bID) || empty($bName) || empty($email) || empty($contact) || empty($status) || empty($rating)){
+                header("Location: brandForm.php?required");
+                exit();
+            }else if(empty($bID) || isset($bName) || isset($email) || isset($contact) || isset($status) || isset($rating)) {
+                header("Location: brandForm.php?id");
+                exit();
+            }else if(isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || isset($rating)){
+                header("Location: brandForm.php?name");
+                exit();
+            } else if (isset($bID) || isset($bName) || empty($email) || isset($contact) || isset($status) || isset($rating)) {
+                header("Location: brandForm.php?email");
+                exit();
+            } else if (isset($bID) || isset($bName) || isset($email) || empty($contact) || isset($status) || isset($rating)) {
+                header("Location: brandForm.php?contact");
+                exit();
+            } else if (isset($bID) || isset($bName) || isset($email) || isset($contact) || empty($status) || isset($rating)) {
+                header("Location: brandForm.php?status");
+                exit();
+            } else if (isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || empty($rating)) {
+                header("Location: brandForm.php?rating");
+                exit();
+            } else if (isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || isset($rating)) {
+                header("Location: brandForm.php?name");
+                exit();
+            }
+        }
+
+        
+        
+    }
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -148,25 +202,25 @@
                     </div>
                 </div>
                 <div class="down">
-                    <form class="bForm">
+                    <form class="bForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                         <div class="content">
                             <div class="item">
                                 <label for="brandID">Brand ID:</label>
-                                <input type="text" name="" placeholder="e.g; B#01">
+                                <input type="text" name="bID" placeholder="e.g; B#01">
                             </div>
                             <div class="item">
                                 <label for="brandName">Brand Name:</label>
-                                <input type="text" name="" placeholder="e.g; Apple inc.">
+                                <input type="text" name="bName" placeholder="e.g; Apple inc.">
                             </div>
                         </div>
                         <div class="content">
                             <div class="item">
                                 <label for="emailAddress">E-mail Address:</label>
-                                <input type="text" name="" placeholder="e.g; support@apple.io">
+                                <input type="text" name="email" placeholder="e.g; support@apple.io">
                             </div>
                             <div class="item">
                                 <label for="contact">Contact:</label>
-                                <input type="text" name="" placeholder="e.g; +1223587893">
+                                <input type="text" name="contact" placeholder="e.g; +1223587893">
                             </div>
                         </div>
                         <div class="content">
