@@ -1,6 +1,6 @@
 <?php
-
-    if($_POST['addBrand']){
+ini_set('display_errors', 'on');
+    if($_POST['Brand']){
         $bID = $_POST['bID'];
         $bName = $_POST['bName'];
         $email = $_POST['email'];
@@ -60,7 +60,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Portal || Vendors</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles copy 2.css">
     <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
 </head>
@@ -245,7 +245,7 @@
                             </div>
                         </div>
                         <div class="brand-btn">
-                            <input type="submit" name="addBrand" value="Add Brand">
+                            <input type="submit" name="Brand" value="Add Brand">
                         </div>
                     </form>
                 </div>
@@ -273,7 +273,7 @@
                             <h2>👍🏼</h2>
                         </div>
                         <div class='right'>
-                            <h2>Brand ID isrequired !</h2>
+                            <h2>Brand ID is required !</h2>
                             <p>Please fill the required field</p>
                         </div>
                     </div>";
