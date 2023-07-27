@@ -38,8 +38,8 @@
             } else if (isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || empty($rating)) {
                 header("Location: brandForm.php?rating");
                 exit();
-            } else if (isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || isset($rating)) {
-                header("Location: brandForm.php?name");
+            } else if ($con->query($sql)) {
+                header("Location: Brands.php?success");
                 exit();
             }
         }
@@ -255,6 +255,82 @@
 
     <script src=" js/script.js">
     </script>
+
+    <?php
+        if (isset($_GET['required'])) {
+            echo "<div id='err'>
+                    <div class='left'>
+                        <h2>👎🏼</h2>
+                    </div>
+                    <div class='right'>
+                        <h2>All fields are required!</h2>
+                        <p>Please fill the required field</p>
+                    </div>
+                </div>";
+        } else if (isset($_GET['id'])) {
+            echo "<div id='err'>
+                        <div class='left'>
+                            <h2>👍🏼</h2>
+                        </div>
+                        <div class='right'>
+                            <h2>Brand ID isrequired !</h2>
+                            <p>Please fill the required field</p>
+                        </div>
+                    </div>";
+        } else if (isset($_GET['name'])) {
+            echo "<div id='err'>
+                    <div class='left'>
+                        <h2>👎🏼</h2>
+                    </div>
+                    <div class='right'>
+                        <h2>Brand Name is required!</h2>
+                        <p>Please fill the required field</p>
+                    </div>
+                </div>";
+        } else if (isset($_GET['email'])) {
+            echo "<div id='err'>
+                    <div class='left'>
+                        <h2>👎🏼</h2>
+                    </div>
+                    <div class='right'>
+                        <h2>Brand E-mail Address is required!</h2>
+                        <p>Please fill the required field</p>
+                    </div>
+                </div>";
+        } else if (isset($_GET['contact'])) {
+            echo "<div id='err'>
+                    <div class='left'>
+                        <h2>👎🏼</h2>
+                    </div>
+                    <div class='right'>
+                        <h2>Brand contact info. is required!</h2>
+                        <p>Please fill the required field</p>
+                    </div>
+                </div>";
+        } else if (isset($_GET['status'])) {
+            echo "<div id='err'>
+                        <div class='left'>
+                            <h2>👎🏼</h2>
+                        </div>
+                        <div class='right'>
+                            <h2>Brand Status is required!</h2>
+                            <p>Please fill the required field</p>
+                        </div>
+            </div>";
+        } else if (isset($_GET['rating'])) {
+            echo "<div id='err'>
+                        <div class='left'>
+                            <h2>👎🏼</h2>
+                        </div>
+                        <div class='right'>
+                            <h2>Brand rating is required!</h2>
+                            <p>Please fill the required field</p>
+                        </div>
+            </div>";
+        }
+
+
+    ?>
 </body>
 
 </html>

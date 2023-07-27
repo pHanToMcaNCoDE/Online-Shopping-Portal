@@ -190,7 +190,7 @@
 
                             if ($con->connet_error) {
                                 die("Cannot connect to the database " . $con->connect_error);
-                            } else {
+                            } else if(!$con->connet_error){
                                 $sql = "SELECT * FROM `Brands`;";
 
                                 $result = $con->query($sql);
@@ -198,15 +198,25 @@
 
                                 while ($row = $result->fetch_assoc()) {
                                     echo "<tr scope='row'> 
-                                            <td>" . $row['Brand_ID'] . "</td>
-                                            <td>" . $row['Brand_Name'] . "</td>
-                                            <td>" . $row['Brand_Email'] . "</td>
-                                            <td>" . $row['Brand_Contact'] . "</td>
-                                            <td>" . $row['Brand_Status'] . "</td>
-                                            <td>" . $row['Brand_Rating'] . "</td>
+                                            <td>" . $row['BrandID'] . "</td>
+                                            <td>" . $row['BrandName'] . "</td>
+                                            <td>" . $row['BrandEmail'] . "</td>
+                                            <td>" . $row['BrandContact'] . "</td>
+                                            <td>" . $row['BrandStatus'] . "</td>
+                                            <td>" . $row['BrandRating'] . "</td>
                                             <td>" . $row['Brand_Rating'] . "</td>
                                         </tr>";
                                 }
+                            }else{
+                                echo "<div id='war'>
+                                        <div class='left'>
+                                            <h2>🤷🏽‍♂️</h2>
+                                        </div>
+                                        <div class='right'>
+                                            <h2>No brands have been added!</h2>
+                                            <p>Click the 'add brand' button above</p>
+                                        </div>
+                                    </div>";
                             }
 
                             ?>
@@ -222,6 +232,21 @@
     </section>
 
     <script src="js/script.js"></script>
+
+    <?php
+        if (isset($_GET['success'])) {
+            echo "<div id='suc'>
+                        <div class='left'>
+                            <h2>👍🏼</h2>
+                        </div>
+                        <div class='right'>
+                            <h2>Brand saved successfully!</h2>
+                            <p>View the brand added below</p>
+                        </div>
+                    </div>";
+        }
+                            
+    ?>
 </body>
 
 </html>

@@ -9,7 +9,8 @@
     --blue: skyblue;
     --g: #66B830;
     --or: orange;
-    --yellow: yellow;
+    --y: rgb(221, 221, 80);
+    --y2: rgb(246, 246, 48);
     --purple: #e386fc;
     --pur: #824892;
     --ash4: #f9fafc;
@@ -40,6 +41,268 @@ html {
 
 body {
     font-family: var(--av), sans-serif;
+}
+
+#err {
+    z-index: 999;
+    position: absolute;
+    right: 2%;
+    width: 30%;
+    padding: 1em;
+    align-items: center;
+    background-color: var(--cr2);
+    border: 1px solid var(--cr);
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--av), sans-serif;
+    color: var(--cr);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: appearDisappear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+@keyframes appearDisappear {
+    0% {
+        top: -40%;
+        display: flex;
+        opacity: 0;
+    }
+
+    5% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    10% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    15% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    20% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    25% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    30% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    35% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    40% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    45% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    50% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    55% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    60% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    65% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    70% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    75% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    80% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    85% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    90% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    95% {
+        top: 55%;
+        display: flex;
+        opacity: 1;
+    }
+
+    100% {
+        top: -40%;
+        display: flex;
+        opacity: 0;
+    }
+}
+
+#err .left {
+    width: 30%;
+}
+
+#err .right {
+    width: 70%;
+}
+
+#err .left h2 {
+    font-size: 2.6em;
+}
+
+#err .right h2 {
+    font-size: 1.2em;
+}
+
+#err .right p {
+    font-size: .9em;
+}
+
+#suc {
+    z-index: 999;
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    width: 30%;
+    padding: 1em;
+    align-items: center;
+    background-color: var(--g2);
+    border: 1px solid var(--g);
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--av), sans-serif;
+    color: var(--g);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: appearDisappear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+#suc .left {
+    width: 30%;
+}
+
+#suc .right {
+    width: 70%;
+}
+
+#suc .left h2 {
+    font-size: 2.6em;
+}
+
+#suc .right h2 {
+    font-size: 1.2em;
+}
+
+#suc .right p {
+    font-size: .9em;
+}
+
+#war {
+    z-index: 999;
+    position: absolute;
+    top: 55%;
+    right: 2%;
+    width: 30%;
+    padding: 1em;
+    align-items: center;
+    background-color: var(--y2);
+    border: 1px solid var(--y);
+    border-radius: 3px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: var(--av), sans-serif;
+    color: var(--y);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-name: appearDisappear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+#war .left {
+    width: 30%;
+}
+
+#war .right {
+    width: 70%;
+}
+
+#war .left h2 {
+    font-size: 2.6em;
+}
+
+#war .right h2 {
+    font-size: 1.2em;
+}
+
+#war .right p {
+    font-size: .9em;
 }
 
 /********************************************************************

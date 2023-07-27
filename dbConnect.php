@@ -6,7 +6,7 @@
 define('SERVER', 'localhost');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DATABASE', 'eCommerceAdminPortal');
+define('DATABASE', 'Online_Shopping_Portal');
 
 
                             // require("dbConnect.php");
