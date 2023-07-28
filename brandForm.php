@@ -38,7 +38,11 @@ ini_set('display_errors', 'on');
             } else if (isset($bID) || empty($bName) || isset($email) || isset($contact) || isset($status) || empty($rating)) {
                 header("Location: brandForm.php?rating");
                 exit();
-            } else if ($con->query($sql)) {
+            } else if(strlen($contact) > 11){
+                header("Location: Brands.php?len");
+                exit();
+            }
+            else if ($con->query($sql)) {
                 header("Location: Brands.php?success");
                 exit();
             }
@@ -59,7 +63,7 @@ ini_set('display_errors', 'on');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Portal || Vendors</title>
+    <title>Shopping Portal - Brands</title>
     <link rel="stylesheet" href="styles copy 2.css">
     <!-- <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css"> -->
     <script src="https://kit.fontawesome.com/032421aa45.js" crossorigin="anonymous"></script>
@@ -220,7 +224,7 @@ ini_set('display_errors', 'on');
                             </div>
                             <div class="item">
                                 <label for="contact">Contact:</label>
-                                <input type="text" name="contact" placeholder="e.g; +1223587893">
+                                <input type="text" name="contact" placeholder="e.g; 1223587893">
                             </div>
                         </div>
                         <div class="content">
@@ -327,6 +331,16 @@ ini_set('display_errors', 'on');
                             <p>Please fill the required field</p>
                         </div>
             </div>";
+        } else if (isset($_GET['len'])) {
+            echo "<div id='err'>
+                    <div class='left'>
+                        <h2>👎🏼</h2>
+                    </div>
+                    <div class='right'>
+                        <h2>Contact should not be more than 11 characters!</h2>
+                        <p>Please fill the required field</p>
+                    </div>
+                </div>";
         }
 
 
