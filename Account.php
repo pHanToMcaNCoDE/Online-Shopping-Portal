@@ -119,7 +119,7 @@
                                     <p><span>Business:</span> phantomBrand</p>
                                     <p><span>Password:</span>
                                         <input disabled type="password" name="pwd" value='@#34Erdft'><br>
-                                        <a href="#" style="padding: .5em;">Change info
+                                        <a href="changeAcc.php" style="padding: .5em;">Change info
                                             <i class="fa-solid fa-arrow-right-long fa-beat"></i>
                                         </a>
                                 </div>
