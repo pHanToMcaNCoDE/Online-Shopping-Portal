@@ -355,6 +355,37 @@ nav .left svg {
     font-weight: 500;
 }
 
+/* Change Account Page */
+.set .view .cAcc form{
+    width: 70vw;
+    height: 80vh;
+    border: var(--ash3);
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+.cAcc form .set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.set .b{
+    display: flex;
+    flex-direction: column;
+}
+
+.b input{
+    width: 100%;
+    outline: none;
+}
+
+
+
+
+
+
+
+
 /* Responsive Design */
 
 @media only screen and (min-width: 200px) and (max-width: 480px) {
